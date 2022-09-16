@@ -1,11 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
-import Rotas from './src/routes';
-
-export default function App() {
+export default function ListConteudo() {
   return (
-      <Rotas/>
+    <View style={styles.container}>
+      <Text>Lista de conteudo!</Text>
+      <StatusBar style="auto" />
+    </View>
   );
 }
 
