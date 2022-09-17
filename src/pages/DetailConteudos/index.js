@@ -1,9 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { WebView } from 'react-native-webview';
+import { useFonts } from 'expo-font';
+import * as SplashScreen from 'expo-splash-screen';
+
 
 export default function ListConteudo(route, navigation) {
     
+
   const item = route.params;
 
   function goBack() {
