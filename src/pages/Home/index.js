@@ -3,21 +3,21 @@ import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native'
 import { Card, Icon } from "@rneui/themed";
 
-import {
-    useFonts,
-    Raleway_200ExtraLight, Raleway_400Regular, Raleway_500Medium
-} from '@expo-google-fonts/raleway'
-import {AppLoading} from 'expo-app-loading'
+// import {
+//     useFonts,
+//     Raleway_200ExtraLight, Raleway_400Regular, Raleway_500Medium, Raleway_600SemiBold
+// } from '@expo-google-fonts/raleway'
+// import {AppLoading} from 'expo-app-loading'
 
 export default function Home() {
 
-    const [fontsLoaded] = useFonts({
-        Raleway_200ExtraLight, Raleway_400Regular, Raleway_500Medium
-    })
+    // const [fontsLoaded] = useFonts({
+    //     Raleway_200ExtraLight, Raleway_400Regular, Raleway_500Medium,Raleway_600SemiBold
+    // })
 
-    if(!fontsLoaded) {
-        <AppLoading/>
-    }
+    // if(!fontsLoaded) {
+    //     <AppLoading/>
+    // }
 
     const navigation = useNavigation();
 

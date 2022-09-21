@@ -1,20 +1,19 @@
 import React from 'react'
-import { StatusBar } from 'expo-status-bar';
 import { useNavigation } from '@react-navigation/native'
 import { StyleSheet, Text, View, TouchableOpacity, SafeAreaView, ImageBackground, Image} from 'react-native';
-import { Card, Icon } from "@rneui/themed";
+import { Icon } from "@rneui/themed";
 
 import {
   useFonts,
-  Raleway_200ExtraLight, Raleway_400Regular, Raleway_500Medium
+  Raleway_200ExtraLight, Raleway_400Regular, Raleway_500Medium, Raleway_600SemiBold
 } from '@expo-google-fonts/raleway'
 import {AppLoading} from 'expo-app-loading'
 
 export default function ListConteudo() {
 
   const [fontsLoaded] = useFonts({
-    Raleway_200ExtraLight, Raleway_400Regular, Raleway_500Medium
-})
+    Raleway_200ExtraLight, Raleway_400Regular, Raleway_500Medium, Raleway_600SemiBold
+   })
 
 if(!fontsLoaded) {
     <AppLoading/>
@@ -29,14 +28,16 @@ if(!fontsLoaded) {
   const [items, setItems] = React.useState(
     [
       { title: 'Valores plasmáticos normais dos principais eletrólitos em adultos', templateWeb: 'conteudo1', image: require('./assets/conteudo1.jpg') },
-      { title: 'Diagnósticos de enfermagem', templateWeb: 'conteudo1', subtitulo: 'Aqui é o subtitulo', /*image: require('./assets/fv1.png')*/ },
-      { title: 'Intervenções de enfermagem', templateWeb: 'conteudo1', subtitulo: 'Aqui é o subtitulo', /*image: require('./assets/fv1.png')*/ },
-      { title: 'Sódio – Cloreto de sódio', templateWeb: 'conteudo1', subtitulo: 'Aqui é o subtitulo', /*image: require('./assets/fv1.png')*/ },
-      { title: 'Potássio – Cloreto de potássio', templateWeb: 'conteudo1', subtitulo: 'Aqui é o subtitulo', /*image: require('./assets/fv1.png')*/ },
-      { title: 'Cloreto – cloreto de sódio e cloreto de potássio', templateWeb: 'conteudo1', subtitulo: 'Aqui é o subtitulo', /*image: require('./assets/fv1.png')*/ },
-      { title: 'Sódio – Cloreto de sódio', templateWeb: 'conteudo1', subtitulo: 'Aqui é o subtitulo', /*image: require('./assets/fv1.png')*/ },
-      { title: 'Sódio – Cloreto de sódio', templateWeb: 'conteudo1', subtitulo: 'Aqui é o subtitulo', /*image: require('./assets/fv1.png')*/ },
-    
+      { title: 'Diagnósticos de enfermagem', templateWeb: 'conteudo2', subtitulo: 'Aqui é o subtitulo', /*image: require('./assets/fv1.png')*/ },
+      { title: 'Intervenções de enfermagem', templateWeb: 'conteudo3', subtitulo: 'Aqui é o subtitulo', /*image: require('./assets/fv1.png')*/ },
+      { title: 'Sódio – Cloreto de sódio', templateWeb: 'conteudo4', subtitulo: 'Aqui é o subtitulo', /*image: require('./assets/fv1.png')*/ },
+      { title: 'Potássio – Cloreto de potássio', templateWeb: 'conteudo5', subtitulo: 'Aqui é o subtitulo', /*image: require('./assets/fv1.png')*/ },
+      { title: 'Cloreto – cloreto de sódio e cloreto de potássio', templateWeb: 'conteudo6', subtitulo: 'Aqui é o subtitulo', /*image: require('./assets/fv1.png')*/ },
+      { title: 'Cálcio – Gluconato de cálcio a 10% e cloreto de cálcio a 10%', templateWeb: 'conteudo7', subtitulo: 'Aqui é o subtitulo', /*image: require('./assets/fv1.png')*/ },
+      { title: 'Magnésio – Sulfato de magnésio', templateWeb: 'conteudo8', subtitulo: 'Aqui é o subtitulo', /*image: require('./assets/fv1.png')*/ },
+      { title: 'Fosfato – Fosfato de potássio', templateWeb: 'conteudo9', subtitulo: 'Aqui é o subtitulo', /*image: require('./assets/fv1.png')*/ },
+      { title: 'Dupla checagem da medicação seguindo os treze certos:', templateWeb: 'conteudo10', subtitulo: 'Aqui é o subtitulo', /*image: require('./assets/fv1.png')*/ },
+      { title: 'Referências', templateWeb: 'conteudo11', subtitulo: 'Aqui é o subtitulo', /*image: require('./assets/fv1.png')*/ },
     ]
   )
 
@@ -64,7 +65,7 @@ if(!fontsLoaded) {
               // <Card style={styles.card}>
               <View key={i} style={styles.card}>
                   <TouchableOpacity onPress={(props) => {
-                    navigation.navigate('EducativoDetail', item)
+                    navigation.navigate('DetailConteudo', item)
                   }}>
                     <View style={{ backgroundColor: item.code }}>
                       <Text style={styles.cardTitle}>{item.title}</Text>
@@ -140,7 +141,7 @@ const styles = StyleSheet.create({
   cardTitle: {
     fontSize: 17,
     margin: 10,
-    fontFamily:'Raleway_500Medium',
+    fontFamily:'Raleway_600SemiBold',
     textAlign: 'center',
   },
   
