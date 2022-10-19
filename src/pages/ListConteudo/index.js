@@ -49,7 +49,7 @@ export default function ListConteudo() {
       <View View style={styles.header}>
         <TouchableOpacity style={{ flexDirection: 'row', justifyContent: "space-between" }}
           onPress={goBack}>
-          {/* <Icon name='home' type='feather' color='#CD0000' style={{ marginLeft: 20 }} /> */}
+          <Icon name='home' type='feather' color='white' style={{ marginLeft: 20 }} />
           <Text style={styles.headerText}>LINGUAGEM DOS ELETRÓLITOS</Text>
         </TouchableOpacity>
       </View>
@@ -89,19 +89,20 @@ const styles = StyleSheet.create({
   },
   header: {
     flexDirection: 'row',
-    justifyContent: "center",
+    justifyContent: "space-between",
     paddingTop: 50,
     paddingVertical: 15,
-    backgroundColor: 'white',
+    backgroundColor: '#CD0000',
     borderColor: '#CD0000',
     borderBottomWidth: 4,
 
   },
   headerText: {
-    color: '#CD0000',
+    color: 'white',
     fontSize: 17,
-    marginStart: 16,
+    marginStart: 10,
     fontWeight: 'bold',
+    marginTop: 5
     // fontFamily: 'Raleway_500Medium'
   },
   welcome: {

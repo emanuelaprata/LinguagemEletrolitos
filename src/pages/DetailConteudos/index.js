@@ -24,7 +24,7 @@ export default function DetailConteudo(route) {
         <TouchableOpacity
           style={{ flexDirection: 'row', justifyContent: "space-between" }}
           onPress={goBack} >
-            <Icon name='arrow-left' type='feather' color='#CD0000' style={{marginLeft: 20}}/>
+            <Icon name='arrow-left' type='feather' color='white' style={{marginLeft: 20}}/>
           <Text style={styles.headerText}>Conteúdo Educativo</Text>
         </TouchableOpacity>
       </View>
@@ -56,15 +56,16 @@ header: {
   justifyContent: "space-between",
   paddingTop: 50,
   paddingVertical: 15,
-  backgroundColor: 'white',
+  backgroundColor: '#CD0000',
   borderColor: '#CD0000',
   borderBottomWidth: 4,
 },
 headerText: {
-    color: '#CD0000',
+    color: 'white',
     fontSize: 16,
-    marginStart: 16,
-    fontWeight: 'bold'
+    marginStart: 10,
+    fontWeight: 'bold',
+    marginTop: 3
 },
 ImageBackground: {
     flex: 1,
