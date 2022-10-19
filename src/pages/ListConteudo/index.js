@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigation } from '@react-navigation/native'
-import { StyleSheet, Text, View, TouchableOpacity, SafeAreaView, ImageBackground, Image} from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, SafeAreaView, ScrollView, ImageBackground, Image} from 'react-native';
 import { Icon } from "@rneui/themed";
 
 import {
@@ -8,6 +8,7 @@ import {
   Raleway_200ExtraLight, Raleway_400Regular, Raleway_500Medium, Raleway_600SemiBold
 } from '@expo-google-fonts/raleway'
 import {AppLoading} from 'expo-app-loading'
+import { Jost_300Light } from '@expo-google-fonts/jost';
 
 export default function ListConteudo() {
 
@@ -27,17 +28,17 @@ if(!fontsLoaded) {
 
   const [items, setItems] = React.useState(
     [
-      { title: 'Valores plasmáticos normais dos principais eletrólitos em adultos', templateWeb: 'conteudo1', image: require('./assets/conteudo1.jpg') },
-      { title: 'Diagnósticos de enfermagem', templateWeb: 'conteudo2', subtitulo: 'Aqui é o subtitulo', /*image: require('./assets/fv1.png')*/ },
-      { title: 'Intervenções de enfermagem', templateWeb: 'conteudo3', subtitulo: 'Aqui é o subtitulo', /*image: require('./assets/fv1.png')*/ },
-      { title: 'Sódio – Cloreto de sódio', templateWeb: 'conteudo4', subtitulo: 'Aqui é o subtitulo', /*image: require('./assets/fv1.png')*/ },
-      { title: 'Potássio – Cloreto de potássio', templateWeb: 'conteudo5', subtitulo: 'Aqui é o subtitulo', /*image: require('./assets/fv1.png')*/ },
-      { title: 'Cloreto – cloreto de sódio e cloreto de potássio', templateWeb: 'conteudo6', subtitulo: 'Aqui é o subtitulo', /*image: require('./assets/fv1.png')*/ },
-      { title: 'Cálcio – Gluconato de cálcio a 10% e cloreto de cálcio a 10%', templateWeb: 'conteudo7', subtitulo: 'Aqui é o subtitulo', /*image: require('./assets/fv1.png')*/ },
-      { title: 'Magnésio – Sulfato de magnésio', templateWeb: 'conteudo8', subtitulo: 'Aqui é o subtitulo', /*image: require('./assets/fv1.png')*/ },
-      { title: 'Fosfato – Fosfato de potássio', templateWeb: 'conteudo9', subtitulo: 'Aqui é o subtitulo', /*image: require('./assets/fv1.png')*/ },
-      { title: 'Dupla checagem da medicação seguindo os treze certos:', templateWeb: 'conteudo10', subtitulo: 'Aqui é o subtitulo', /*image: require('./assets/fv1.png')*/ },
-      { title: 'Referências', templateWeb: 'conteudo11', subtitulo: 'Aqui é o subtitulo', /*image: require('./assets/fv1.png')*/ },
+      { title: 'Valores plasmáticos normais dos principais eletrólitos em adultos', templateWeb: 'conteudo1', image: require('./assets/conteudo1.jpg')  },
+      { title: 'Diagnósticos de enfermagem', templateWeb: 'conteudo2', subtitulo: 'Aqui é o subtitulo', image: require('./assets/conteudo2.jpg') },
+      { title: 'Intervenções de enfermagem', templateWeb: 'conteudo3', subtitulo: 'Aqui é o subtitulo', image: require('./assets/conteudo3.jpg')},
+      { title: 'Sódio – Cloreto de sódio', templateWeb: 'conteudo4', subtitulo: 'Aqui é o subtitulo', image: require('./assets/conteudo4.jpg')},
+      { title: 'Potássio – Cloreto de potássio', templateWeb: 'conteudo5', subtitulo: 'Aqui é o subtitulo',image: require('./assets/conteudo5.jpg')  },
+      { title: 'Cloreto – cloreto de sódio e cloreto de potássio', templateWeb: 'conteudo6', subtitulo: 'Aqui é o subtitulo', image: require('./assets/conteudo4.jpg') },
+      { title: 'Cálcio – Gluconato de cálcio a 10% e cloreto de cálcio a 10%', templateWeb: 'conteudo7', subtitulo: 'Aqui é o subtitulo',image: require('./assets/conteudo5.jpg') },
+      { title: 'Magnésio – Sulfato de magnésio', templateWeb: 'conteudo8', subtitulo: 'Aqui é o subtitulo', image: require('./assets/conteudo4.jpg') },
+      { title: 'Fosfato – Fosfato de potássio', templateWeb: 'conteudo9', subtitulo: 'Aqui é o subtitulo', image: require('./assets/conteudo5.jpg') },
+      { title: 'Dupla checagem da medicação seguindo os treze certos:', templateWeb: 'conteudo10', subtitulo: 'Aqui é o subtitulo', image: require('./assets/conteudo4.jpg') },
+      { title: 'Referências', templateWeb: 'conteudo11', subtitulo: 'Aqui é o subtitulo', image: require('./assets/conteudo7.jpg') },
     ]
   )
 
@@ -48,35 +49,42 @@ if(!fontsLoaded) {
      <View View style={styles.header}>
         <TouchableOpacity style={{ flexDirection: 'row', justifyContent: "space-between" }}
           onPress={goBack}>
-          <Icon name='home' type='feather' color='#fff' style={{marginLeft: 20}}/>
-          <Text style={styles.headerText}>Home</Text>
+          <Icon name='home' type='feather' color='#CD0000' style={{marginLeft: 20}}/>
+          <Text style={styles.headerText}>Bem-vindo(a), ao IvFluidos. </Text>
         </TouchableOpacity>
       </View> 
 
       <View>
-      <View style={styles.welcome}>
-        <Text style={{fontFamily:'Raleway_500Medium', fontSize: 17, marginTop: 10}}>Bem-vindo(a), ao IvFluidos. </Text>
-      </View>
+      {/* <View style={styles.welcome}>
+        <Text style={{fontFamily:'Raleway_500Medium', fontSize: 17, marginTop: 10}}></Text>
+      </View> */}
 
       <View>
         <SafeAreaView>
+          <ScrollView 
+           overScrollMode = 'always'
+           
+           style={{backgroundColor: '#EEECEC'}}>
           {items.map((item, i) => {
             return (
-              // <Card style={styles.card}>
               <View key={i} style={styles.card}>
+                {/* <ImageBackground
+                                blurRadius={2.5}
+                                source={item.image}
+                                style={{ ...styles.ImageBackground }}> */}
                   <TouchableOpacity onPress={(props) => {
                     navigation.navigate('DetailConteudo', item)
                   }}>
-                    <View style={{ backgroundColor: item.code }}>
+                    <View style={{ backgroundColor: item.code}}>
                       <Text style={styles.cardTitle}>{item.title}</Text>
                     </View>
                   </TouchableOpacity>
+                  {/* </ImageBackground> */}
               </View>
-              // </Card>
             )
 
           })}
-
+          </ScrollView>
         </SafeAreaView>
       </View>
     </View>
@@ -88,17 +96,19 @@ const styles = StyleSheet.create({
   screen: {
     flex: 1,
     display: "flex",
-    backgroundColor: '#fafafa'
-  },
+    },
   header: {
     flexDirection: 'row',
     justifyContent: "space-between",
-    paddingTop: 40,
+    paddingTop: 50,
     paddingVertical: 15,
-    backgroundColor: '#CD0000',
+    backgroundColor: 'white',
+    borderColor: '#CD0000',
+    borderBottomWidth: 3,
+    
   },
   headerText: {
-    color: '#fff',
+    color: '#CD0000',
     fontSize: 17,
     marginStart: 16,
     fontWeight: '200',
@@ -115,35 +125,31 @@ const styles = StyleSheet.create({
     height: 150,
     borderRadius:100,
 },
-  // card: {
-  //   padding: 15,
-  //   marginLeft: 10,
-  //   marginRight: 10,
-  //   marginTop: 15,
-  //   borderRadius: 7,
-  //   elevation: 1,
-  //   shadowOffset: Card,
-  //   backgroundColor: 'E1E0E0'
-  // },
   card:{
-    borderRadius: 5,
+    borderRadius: 2.5,
     margin: 12,
     elevation: 2,
     borderEndColor: '#484848',
-    boxShadow: "10px 10px 17px -12px rgba(0,0,0,0.75)",
     shadowColor: '#484848',
-    padding: 20,
+    padding: null,
     borderLeftColor: '#CD0000',
-    borderLeftWidth: 6,
-    //borderWidth: 0.2,
-
+    borderLeftWidth: 2.5,
+    backgroundColor: 'white',
+    borderWidth: 0.2,
   },
   cardTitle: {
     fontSize: 17,
-    margin: 10,
     fontFamily:'Raleway_600SemiBold',
-    textAlign: 'center',
+    color: 'w#484848',
+    marginLeft: 10,
+    margin: 30,
+    color: '#484848',
+    textShadowColor: 'white',
+    textShadowRadius: 5
   },
+  ImageBackground: {
+
+  }
   
 
 });
