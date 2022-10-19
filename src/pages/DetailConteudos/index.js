@@ -58,12 +58,13 @@ header: {
   paddingVertical: 15,
   backgroundColor: 'white',
   borderColor: '#CD0000',
-  borderBottomWidth: 3,
+  borderBottomWidth: 4,
 },
 headerText: {
     color: '#CD0000',
     fontSize: 16,
     marginStart: 16,
+    fontWeight: 'bold'
 },
 ImageBackground: {
     flex: 1,

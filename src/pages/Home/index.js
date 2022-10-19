@@ -3,21 +3,21 @@ import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native'
 import { Card, Icon } from "@rneui/themed";
 
-import {
-    useFonts,
-    Raleway_200ExtraLight, Raleway_400Regular, Raleway_500Medium, Raleway_600SemiBold
-} from '@expo-google-fonts/raleway'
-import {AppLoading} from 'expo-app-loading'
+// import {
+//     useFonts,
+//     Raleway_200ExtraLight, Raleway_400Regular, Raleway_500Medium, Raleway_600SemiBold
+// } from '@expo-google-fonts/raleway'
+// import {AppLoading} from 'expo-app-loading'
 
 export default function Home() {
 
-     const [fontsLoaded] = useFonts({
-         Raleway_200ExtraLight, Raleway_400Regular, Raleway_500Medium,Raleway_600SemiBold
-     })
+    //  const [fontsLoaded] = useFonts({
+    //      Raleway_200ExtraLight, Raleway_400Regular, Raleway_500Medium,Raleway_600SemiBold
+    //  })
 
-     if(!fontsLoaded) {
-     <AppLoading/>
-     }
+    //  if(!fontsLoaded) {
+    //  <AppLoading/>
+    //  }
 
     const navigation = useNavigation();
 
@@ -33,7 +33,7 @@ export default function Home() {
             <TouchableOpacity style={styles.button}
                 onPress={(props) => { navigation.navigate('ListConteudo') }}>
                 <View style={styles.view} >
-                <Text style={{color: 'white', marginEnd: 10, fontSize: 15, fontFamily: "Raleway_500Medium"}}>Continuar</Text>
+                <Text style={{color: 'white', marginEnd: 10, fontSize: 15}}>Continuar</Text>
                 <Icon name='arrow-right' type='feather' color='#fff'/>
                 </View>
             </TouchableOpacity>
@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
         padding: 40,
         textAlign: 'center',
         alignItems: 'center',
-        fontFamily: 'Raleway_500Medium',
+        // fontFamily: 'Raleway_500Medium',
     },
     view: {
         display: 'flex',
