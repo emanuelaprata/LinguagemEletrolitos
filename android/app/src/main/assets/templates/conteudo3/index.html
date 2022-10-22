@@ -34,11 +34,13 @@
             margin-bottom: 5vw;
         }
 
-        p.textTopico{
-            margin: 0px; 
-            padding: 20px; 
-            font-size:3vw;
-
+        p.textTopico {
+            font-size: 3vw;
+            padding: 5px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            margin-left: 10px;
         }
 
         div.topico {
@@ -57,88 +59,76 @@
         }
 
         div.topico1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 100%;
-            height: 150px;
             background-color: #EA702A;
             border: 3px;
             border-top-left-radius: 100px;
             border-bottom-left-radius: 100px;
-            color: white;
             box-shadow: 1px 1px 2px black;
-            font-weight: bold;
-            text-align: center;
-            justify-content: center;
             margin: 10px;
-            align-items: center;
-            display: flex;
         }
 
         div.topico2 {
             display: flex;
+            justify-content: center;
             align-items: center;
             width: 100%;
-            height: 150px;
             background-color: #9A9A9A;
             border: 3px;
             border-top-left-radius: 100px;
             border-bottom-left-radius: 100px;
-            color: white;
             box-shadow: 1px 1px 2px black;
-            font-weight: bold;
-            text-align: center;
-            justify-content: center;
             margin: 10px;
         }
 
         div.topico3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 100%;
-            height: 150px;
             background-color: #F7C02F;
             border: 3px;
             border-top-left-radius: 100px;
             border-bottom-left-radius: 100px;
-            color: white;
             box-shadow: 1px 1px 2px black;
-            font-weight: bold;
-            text-align: center;
-            justify-content: center;
             margin: 10px;
+        }
+
+        div.topico4 {
             display: flex;
             align-items: center;
-        }
-        div.topico4 {
+            justify-content: center;
             width: 100%;
-            height: 150px;
             background-color: #448BCB;
             border: 3px;
             border-top-left-radius: 100px;
             border-bottom-left-radius: 100px;
-            color: white;
             box-shadow: 1px 1px 2px black;
-            font-weight: bold;
-            text-align: center;
-            justify-content: center;
             margin: 10px;
+        }
+
+        div.topico5 {
             display: flex;
             align-items: center;
-        }
-        div.topico5 {
+            justify-content: center;
             width: 100%;
-            height: 150px;
             background-color: #64A638;
             border: 3px;
             border-top-left-radius: 100px;
             border-bottom-left-radius: 100px;
-            color: white;
             box-shadow: 1px 1px 2px black;
-            font-weight: bold;
-            text-align: center;
-            justify-content: center;
             margin: 10px;
-            align-items:center;
-            display: flex;
         }
 
+        img.icons {
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+            margin-bottom: 20px
+        }
     </style>
 
 </head>
@@ -156,13 +146,12 @@
                 enfermagem</p>
         </div>
 
-        <img src="./conteudo3b.png" alt="Banner" width=100%
+        <img src="assets/conteudo3.png" alt="Banner" width=100%
             style="height: 350px ;object-fit: cover; margin-bottom: 20px" />
 
 
         <div style="display: flex; align-items:center; justify-content: center;">
-            <img src="./coracao.png" alt="Banner" width=90px
-                style="height: 90px ;object-fit: cover; margin-bottom: 20px" />
+            <img class="icons" src="assets/coracao.png" alt="Icons" />
             <div class="topico1">
                 <p class="textTopico">Monitorar níveis anormais de eletrólitos séricos, se
                     possível. </p>
@@ -170,8 +159,7 @@
         </div>
 
         <div style="display: flex; align-items:center; justify-content: center;">
-            <img src="./remedio.png" alt="Banner" width=90px
-                style="height: 90px ;object-fit: cover; margin-bottom: 20px" />
+            <img class="icons" src="assets/remedio.png" alt="Banner" width=90px />
             <div class="topico2">
                 <p class="textTopico">Monitorar a ocorrência de manifestações de desequilíbrio eletrolítico.
                 </p>
@@ -179,8 +167,7 @@
         </div>
 
         <div style="display: flex; align-items:center; justify-content: center;">
-            <img src="./scalp.png" alt="Banner" width=90px
-                style="height: 90px ;object-fit: cover; margin-bottom: 20px" />
+            <img src="assets/scalp.png" alt="Banner" width=90px />
             <div class="topico3">
                 <p class="textTopico">Monitorar a ocorrência de manifestações de desequilíbrio eletrolítico.
                 </p>
@@ -188,83 +175,75 @@
         </div>
 
         <div style="display: flex; align-items:center; justify-content: center;">
-            <img src="./soro.png" alt="Banner" width=90px
-                style="height: 90px ;object-fit: cover; margin-bottom: 20px" />
+            <img class="icons" src="assets/soro.png" alt="Icons" />
             <div class="topico4">
                 <p class="textTopico">Administrar líquidos conforme a prescrição, se adequado.</p>
             </div>
         </div>
 
         <div style="display: flex; align-items:center; justify-content: center; ">
-            <img src="./anotacoes.png" alt="Banner" width=90px
-                style="height: 90px ;object-fit: cover; margin-bottom: 20px" />
+            <img class="icons" src="assets/anotacoes.png" alt="icons" />
             <div class="topico5">
                 <p class="textTopico">Manter registro preciso da ingestão e da eliminação.</p>
             </div>
         </div>
 
         <div style="display: flex; align-items:center; justify-content: center;">
-            <img src="./soro2.png" alt="Banner" width=90px
-                style="height: 90px ;object-fit: cover; margin-bottom: 20px" />
+            <img class="icons" src="assets/soro2.png" alt="Banner" />
             <div class="topico1">
-                <p class="textTopico">Manter solução intravenosa com eletrólito(s) num gotejamento constante, conforme apropriado
+                <p class="textTopico">Manter solução intravenosa com eletrólito(s) num gotejamento constante, conforme
+                    apropriado
                 </p>
             </div>
         </div>
 
         <div style="display: flex; align-items:center; justify-content: center;">
-            <img src="./scalp.png" alt="Banner" width=90px
-                style="height: 90px ;object-fit: cover; margin-bottom: 20px" />
-            <div class="topico2"
-            style="height: 150px;">
+            <img class="icons" src="assets/scalp.png" alt="Icons" />
+            <div class="topico2">
                 <p class="textTopico">
-                    Administrar eletrólitos suplementares (p. ex., via oral, nasogástrica e intravenosa), conforme prescrito e, se apropriado. </p>
+                    Administrar eletrólitos suplementares (p. ex., via oral, nasogástrica e intravenosa), conforme
+                    prescrito e, se apropriado. </p>
             </div>
         </div>
 
         <div style="display: flex; align-items:center; justify-content: center;">
-            <img src="./medico.png" alt="Banner" width=90px
-                style="height: 90px ;object-fit: cover; margin-bottom: 20px" />
-            <div class="topico3"
-            style="height: 195px;">
+            <img class="icons" src="assets/medico.png" alt="Icons" />
+            <div class="topico3">
                 <p class="textTopico">
-                    Consultar o médico sobre a administração de medicamentos poupadores de eletrólitos (p. ex., espironolactona), conforme prescrição, se apropriado. </p>
+                    Consultar o médico sobre a administração de medicamentos poupadores de eletrólitos (p. ex.,
+                    espironolactona), conforme prescrição, se apropriado. </p>
             </div>
         </div>
 
         <div style="display: flex; align-items:center; justify-content: center;">
-            <img src="./quimica.png" alt="Banner" width=90px
-                style="height: 90px ;object-fit: cover; margin-bottom: 20px" />
-            <div class="topico4"
-            style="height: 165px;">
+            <img class="icons" src="assets/quimica.png" alt="Icons" />
+            <div class="topico4">
                 <p class="textTopico">
-                    Obter amostras prescritas para análise laboratorial dos níveis de eletrólitos (p. ex., gasometria arterial, urina e níveis séricos), conforme apropriado.</p>
+                    Obter amostras prescritas para análise laboratorial dos níveis de eletrólitos (p. ex., gasometria
+                    arterial, urina e níveis séricos), conforme apropriado.</p>
             </div>
         </div>
 
         <div style="display: flex; align-items:center; justify-content: center;">
-            <img src="./anotacoes.png" alt="Banner" width=90px
-                style="height: 90px ;object-fit: cover; margin-bottom: 20px" />
-            <div class="topico5"
-            style="height: 195px;">
+            <img class="icons" src="assets/anotacoes.png" alt="Icons" />
+            <div class="topico5">
                 <p class="textTopico">
-                    Monitorar a ocorrência de perda de líquidos ricos em eletrólitos (p. ex., aspiração nasogástrica, drenagem de ileostomia, diarreia, drenagem de ferida e sudorese).</p>
+                    Monitorar a ocorrência de perda de líquidos ricos em eletrólitos (p. ex., aspiração nasogástrica,
+                    drenagem de ileostomia, diarreia, drenagem de ferida e sudorese).</p>
             </div>
         </div>
 
         <div style="display: flex; align-items:center; justify-content: center;">
-            <img src="./remedio.png" alt="Banner" width=90px
-                style="height: 90px ;object-fit: cover; margin-bottom: 20px" />
-            <div class="topico1"
-            style="height: 203px;">
+            <img class="icons" src="assets/remedio.png" alt="Icons" />
+            <div class="topico1">
                 <p class="textTopico">
-                    Instituir medidas de controle de perda excessiva de eletrólitos (p. ex., por meio de controle intestinal, troca do tipo de diurético ou administração de antipiréticos), conforme apropriado.</p>
+                    Instituir medidas de controle de perda excessiva de eletrólitos (p. ex., por meio de controle
+                    intestinal, troca do tipo de diurético ou administração de antipiréticos), conforme apropriado.</p>
             </div>
         </div>
 
         <div style="display: flex; align-items:center; justify-content: center;">
-            <img src="./soro.png" alt="Banner" width=90px
-                style="height: 90px ;object-fit: cover; margin-bottom: 20px" />
+            <img class="icons" src="assets/soro.png" alt="Icons" />
             <div class="topico2">
                 <p class="textTopico">
                     Irrigar as sondas nasogástricas com solução fisiológica.</p>
@@ -272,64 +251,62 @@
         </div>
 
         <div style="display: flex; align-items:center; justify-content: center;">
-            <img src="./soro2.png" alt="Banner" width=90px
-                style="height: 90px ;object-fit: cover; margin-bottom: 20px" />
-            <div class="topico3"
-            style="height: 155px;">
-                <p class="textTopico">
-                    Minimizar a quantidade de lascas de gelo ou ingestão oral consumida pelo paciente com sondas gástricas conectadas à sucção.</p>
-            </div>
-        </div>
-
-        <div style="display: flex; align-items:center; justify-content: center;">
-            <img src="./dieta.png" alt="Banner" width=90px
-                style="height: 90px ;object-fit: cover; margin-bottom: 20px" />
-            <div class="topico4"
-            style="height: 240px;">
-                <p class="textTopico">
-                    Oferecer uma dieta adequada ao desequilíbrio eletrolítico do paciente (p. ex., se hipopotassemia, incentivar a alimentação com alimentos ricos em potássio, pobres em sódio e pobres em carboidratos).</p>
-            </div>
-        </div>
-
-        <div style="display: flex; align-items:center; justify-content: center;">
-            <img src="./familia.png" alt="Banner" width=90px
-                style="height: 90px ;object-fit: cover; margin-bottom: 20px" />
-            <div class="topico5">
-                <p class="textTopico">
-                    Orientar o paciente e/ou familiares sobre as modificações específicas na dieta, conforme apropriado.</p>
-            </div>
-        </div>
-
-        <div style="display: flex; align-items:center; justify-content: center;">
-            <img src="./cerebro.png" alt="Banner" width=90px
-                style="height: 90px ;object-fit: cover; margin-bottom: 20px" />
-            <div class="topico1">
-                <p class="textTopico">
-                    Proporcionar um ambiente seguro a paciente com manifestações neurológicas e/ou neuromusculares de desequilíbrio eletrolítico.</p>
-            </div>
-        </div>
-
-        <div style="display: flex; align-items:center; justify-content: center;">
-            <img src="./familia.png" alt="Banner" width=90px
-                style="height: 90px ;object-fit: cover; margin-bottom: 20px" />
-            <div class="topico2">
-                <p class="textTopico">
-                    Ensinar o paciente e a família a respeito do tipo, da causa e dos tratamentos para desequilíbrio eletrolítico, conforme apropriado.</p>
-            </div>
-        </div>
-
-        <div style="display: flex; align-items:center; justify-content: center;">
-            <img src="./medico.png" alt="Banner" width=90px
-                style="height: 90px ;object-fit: cover; margin-bottom: 20px" />
+            <img class="icons" src="assets/soro2.png" alt="Icons" />
             <div class="topico3">
                 <p class="textTopico">
-                    Consultar o médico quando sinais e sintomas de desequilíbrio hídrico e/ou eletrolítico persistirem ou piorarem.</p>
+                    Minimizar a quantidade de lascas de gelo ou ingestão oral consumida pelo paciente com sondas
+                    gástricas conectadas à sucção.</p>
             </div>
         </div>
 
         <div style="display: flex; align-items:center; justify-content: center;">
-            <img src="./remedio.png" alt="Banner" width=90px
-                style="height: 90px ;object-fit: cover; margin-bottom: 20px" />
+            <img class="icons" src="assets/dieta.png" alt="Icons" />
+            <div class="topico4">
+                <p class="textTopico">
+                    Oferecer uma dieta adequada ao desequilíbrio eletrolítico do paciente (p. ex., se hipopotassemia,
+                    incentivar a alimentação com alimentos ricos em potássio, pobres em sódio e pobres em carboidratos).
+                </p>
+            </div>
+        </div>
+
+        <div style="display: flex; align-items:center; justify-content: center;">
+            <img class="icons" src="assets/familia.png" alt="Icons" />
+            <div class="topico5">
+                <p class="textTopico">
+                    Orientar o paciente e/ou familiares sobre as modificações específicas na dieta, conforme apropriado.
+                </p>
+            </div>
+        </div>
+
+        <div style="display: flex; align-items:center; justify-content: center;">
+            <img class="icons" src="assets/cerebro.png" alt="Icons" />
+            <div class="topico1">
+                <p class="textTopico">
+                    Proporcionar um ambiente seguro a paciente com manifestações neurológicas e/ou neuromusculares de
+                    desequilíbrio eletrolítico.</p>
+            </div>
+        </div>
+
+        <div style="display: flex; align-items:center; justify-content: center;">
+            <img class="icons" src="assets/familia.png" alt="Icons" />
+            <div class="topico2">
+                <p class="textTopico">
+                    Ensinar o paciente e a família a respeito do tipo, da causa e dos tratamentos para desequilíbrio
+                    eletrolítico, conforme apropriado.</p>
+            </div>
+        </div>
+
+        <div style="display: flex; align-items:center; justify-content: center;">
+            <img class="icons" src="assets/medico.png" alt="Icons" />
+            <div class="topico3">
+                <p class="textTopico">
+                    Consultar o médico quando sinais e sintomas de desequilíbrio hídrico e/ou eletrolítico persistirem
+                    ou piorarem.</p>
+            </div>
+        </div>
+
+        <div style="display: flex; align-items:center; justify-content: center;">
+            <img class="icons" src="assets/remedio.png" alt="Icons" />
             <div class="topico4">
                 <p class="textTopico">
                     Monitorar a resposta do paciente à terapia eletrolítica prescrita.</p>
@@ -337,26 +314,25 @@
         </div>
 
         <div style="display: flex; align-items:center; justify-content: center;">
-            <img src="./estomago.png" alt="Banner" width=90px
-                style="height: 90px ;object-fit: cover; margin-bottom: 20px" />
+            <img class="icons" src="assets/estomago.png" alt="Icons" />
             <div class="topico5">
                 <p class="textTopico">
-                    Monitorar a ocorrência de efeitos secundários dos eletrólitos suplementares prescritos (Ex: irritação gastrointestinal).</p>
+                    Monitorar a ocorrência de efeitos secundários dos eletrólitos suplementares prescritos (Ex:
+                    irritação gastrointestinal).</p>
             </div>
         </div>
 
         <div style="display: flex; align-items:center; justify-content: center;">
-            <img src="./quimica.png" alt="Banner" width=90px
-                style="height: 90px ;object-fit: cover; margin-bottom: 20px" />
+            <img class="icons" src="assets/quimica.png" alt="Icons" />
             <div class="topico1">
                 <p class="textTopico">
-                    Monitorar atentamente os níveis séricos de potássio de pacientes que usam digitálicos e diuréticos.</p>
+                    Monitorar atentamente os níveis séricos de potássio de pacientes que usam digitálicos e diuréticos.
+                </p>
             </div>
         </div>
 
         <div style="display: flex; align-items:center; justify-content: center;">
-            <img src="./coracao.png" alt="Banner" width=90px
-                style="height: 90px ;object-fit: cover; margin-bottom: 20px" />
+            <img class="icons" src="assets/coracao.png" alt="Icons" />
             <div class="topico2">
                 <p class="textTopico">
                     Colocar em monitor cardíaco, conforme apropriado.</p>
@@ -364,8 +340,7 @@
         </div>
 
         <div style="display: flex; align-items:center; justify-content: center;">
-            <img src="./batimentos.png" alt="Banner" width=90px
-                style="height: 90px ;object-fit: cover; margin-bottom: 20px" />
+            <img class="icons" src="assets/batimentos.png" alt="Icons" />
             <div class="topico3">
                 <p class="textTopico">
                     Tratar as arritmias cardíacas, conforme a política da instituição.</p>
@@ -373,30 +348,13 @@
         </div>
 
         <div style="display: flex; align-items:center; justify-content: center;">
-            <img src="./scalp.png" alt="Banner" width=90px
-                style="height: 90px ;object-fit: cover; margin-bottom: 20px" />
+            <img class="icons" src="assets/scalp.png" alt="Icons" />
             <div class="topico4">
                 <p class="textTopico">
-                    Preparar o paciente para diálise (p. ex., auxiliar na colocação do cateter para a diálise), conforme apropriado.</p>
+                    Preparar o paciente para diálise (p. ex., auxiliar na colocação do cateter para a diálise), conforme
+                    apropriado.</p>
             </div>
         </div>
-
-
-
-
-
-
-        <!-- <img src="./conteudo3c.png" alt="Banner" width=100%
-            style="height: 100% ;object-fit: cover; margin-bottom: 20px" />
-
-        <img src="./conteudo3d.png" alt="Banner" width=100%
-            style="height: 100% ;object-fit: cover; margin-bottom: 20px" />
-
-        <img src="./conteudo3e.png" alt="Banner" width=100%
-            style="height: 100% ;object-fit: cover; margin-bottom: 20px" />
-
-        <img src="./conteudod.png" alt="Banner" width=100%
-            style="height: 100% ;object-fit: cover; margin-bottom: 20px" /> -->
 
     </div>
 </body>
