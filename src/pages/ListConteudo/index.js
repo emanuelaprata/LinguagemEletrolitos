@@ -3,22 +3,7 @@ import { useNavigation } from '@react-navigation/native'
 import { StyleSheet, Text, View, TouchableOpacity, SafeAreaView, ScrollView, ImageBackground, Image } from 'react-native';
 import { Icon } from "@rneui/themed";
 
-// import {
-//   useFonts,
-//   Raleway_200ExtraLight, Raleway_400Regular, Raleway_500Medium, Raleway_600SemiBold
-// } from '@expo-google-fonts/raleway'
-// import {AppLoading} from 'expo-app-loading'
-// import { Jost_300Light } from '@expo-google-fonts/jost';
-
 export default function ListConteudo() {
-
-  //   const [fontsLoaded] = useFonts({
-  //     Raleway_200ExtraLight, Raleway_400Regular, Raleway_500Medium, Raleway_600SemiBold
-  //    })
-
-  // if(!fontsLoaded) {
-  //     <AppLoading/>
-  // }
 
   const navigation = useNavigation();
 
@@ -47,10 +32,12 @@ export default function ListConteudo() {
     <View style={styles.screen}>
 
       <View View style={styles.header}>
-        <TouchableOpacity style={{ flexDirection: 'row', justifyContent: "space-between" }}
+        <TouchableOpacity 
           onPress={goBack}>
+          <View style={{ flexDirection: 'row', justifyContent: "space-between" }}>
           <Icon name='home' type='feather' color='white' style={{ marginLeft: 20 }} />
           <Text style={styles.headerText}>LINGUAGEM DOS ELETRÓLITOS</Text>
+          </View>
         </TouchableOpacity>
       </View>
 
@@ -61,18 +48,13 @@ export default function ListConteudo() {
             {items.map((item, i) => {
               return (
                 <View key={i} style={styles.card}>
-                  {/* <ImageBackground
-                                blurRadius={2.5}
-                                source={item.image}
-                                style={{ ...styles.ImageBackground }}> */}
                   <TouchableOpacity onPress={(props) => {
                     navigation.navigate('DetailConteudo', item)
                   }}>
                     <View style={{ backgroundColor: item.code }}>
-                      <Text style={styles.cardTitle}>{item.title}</Text>
+                      <Text style={styles.cardTitle}>{i+1+'.'} {item.title}</Text>
                     </View>
                   </TouchableOpacity>
-                  {/* </ImageBackground> */}
                 </View>
               )
 
@@ -92,9 +74,9 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     paddingTop: 50,
     paddingVertical: 15,
-    backgroundColor: '#CD0000',
+    backgroundColor: '#870202',
     borderColor: '#CD0000',
-    borderBottomWidth: 4,
+    //borderBottomWidth: 4,
 
   },
   headerText: {
@@ -102,8 +84,7 @@ const styles = StyleSheet.create({
     fontSize: 17,
     marginStart: 10,
     fontWeight: 'bold',
-    marginTop: 5
-    // fontFamily: 'Raleway_500Medium'
+
   },
   welcome: {
     padding: null,
@@ -115,17 +96,17 @@ const styles = StyleSheet.create({
     borderRadius: 7,
     margin: 12,
     elevation: 2,
-    borderEndColor: '#black',
-    borderLeftColor: '#CD0000',
-    borderLeftWidth: 4,
-    backgroundColor: '#FBFBFB',
-    borderWidth: 0.4,
+    //borderEndColor: '#black',
+    //borderLeftColor: '#CD0000',
+    //borderLeftWidth: 4,
+    backgroundColor: '#D7DBDD',
+    //borderWidth: 0.4,
   },
   cardTitle: {
     fontSize: 18,
-    // fontFamily: 'Raleway_600SemiBold',
     marginLeft: 10,
     margin: 30,
-    fontWeight:'500',
+    fontWeight:'600',
+    textAlign: 'center',
   },
 });

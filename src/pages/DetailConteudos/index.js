@@ -9,7 +9,6 @@ export default function DetailConteudo(route) {
 
 
   const item = route.route.params;
-  //console.log('Route---', route.route.params)
   const navigation = useNavigation();
 
   function goBack() {
@@ -22,10 +21,11 @@ export default function DetailConteudo(route) {
     <View style={styles.screen}>
       <View style={styles.header}>
         <TouchableOpacity
-          style={{ flexDirection: 'row', justifyContent: "space-between" }}
           onPress={goBack} >
+            <View style={{ flexDirection: 'row', justifyContent: "space-between" }}>
             <Icon name='arrow-left' type='feather' color='white' style={{marginLeft: 20}}/>
           <Text style={styles.headerText}>Conteúdo Educativo</Text>
+          </View>
         </TouchableOpacity>
       </View>
 
@@ -65,7 +65,6 @@ headerText: {
     fontSize: 16,
     marginStart: 10,
     fontWeight: 'bold',
-    marginTop: 3
 },
 ImageBackground: {
     flex: 1,

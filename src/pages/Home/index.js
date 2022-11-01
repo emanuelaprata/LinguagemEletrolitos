@@ -3,21 +3,7 @@ import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native'
 import { Card, Icon } from "@rneui/themed";
 
-// import {
-//     useFonts,
-//     Raleway_200ExtraLight, Raleway_400Regular, Raleway_500Medium, Raleway_600SemiBold
-// } from '@expo-google-fonts/raleway'
-// import {AppLoading} from 'expo-app-loading'
-
 export default function Home() {
-
-    //  const [fontsLoaded] = useFonts({
-    //      Raleway_200ExtraLight, Raleway_400Regular, Raleway_500Medium,Raleway_600SemiBold
-    //  })
-
-    //  if(!fontsLoaded) {
-    //  <AppLoading/>
-    //  }
 
     const navigation = useNavigation();
 
@@ -52,7 +38,6 @@ const styles = StyleSheet.create({
         padding: 40,
         textAlign: 'center',
         alignItems: 'center',
-        // fontFamily: 'Raleway_500Medium',
     },
     view: {
         display: 'flex',
@@ -61,7 +46,7 @@ const styles = StyleSheet.create({
          justifyContent: "space-between"
     },
     button: {
-        backgroundColor: '#FF5050',
+        backgroundColor: '#870202',
         justifyContent: 'center',
         alignItems: 'center',
         height: 60, 
