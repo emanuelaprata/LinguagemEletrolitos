@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="../libs/bootstrap.css">
+    <style>
+        @font-face {
+            font-family: "Lobster-Regular";
+            src: url("../../fonts/Metropolis-Regular.ttf") format("truetype");
+        }
+
+        html {
+            width: 100%;
+        }
+
+        body {
+            background-color: white;
+            font-size: 4vw;
+            width: 100%;
+            padding: 5%;
+        }
+
+        h1 {
+            font-family: Lobster-Regular;
+            font-size: 8vw;
+        }
+
+        p {
+            margin-top: 5vw;
+            margin-bottom: 5vw;
+        }
+
+        p.text {
+            margin-top: 2px;
+            font-size: 4vw
+        }
+
+        p.title {
+            font-weight: bold;
+            font-size: 5vw;
+        }
+
+        p.subtitle {
+            font-weight: bold;
+            font-size: 4.5vw;
+        }
+
+        p.sumario {
+            font-size: 3.5vw;
+            font-weight: 700;
+            margin-bottom: 0px;
+        }
+
+        p.topico {
+            margin-top: 6vw;
+            margin-bottom: 3vw;
+            font-size: 5vw;
+            padding: 4px;
+            width: 100%;
+            background-color: #C55A21;
+            border: 3px;
+            border-radius: 15px;
+            color: white;
+            box-shadow: 1px 1px 2px black;
+            font-weight: bold;
+            text-align: center;
+            font-style: italic;
+        }
+
+        p.textTopico {
+            font-size: 3vw;
+            padding: 5px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            margin-left: 10px;
+        }
+
+        div.topico {
+            margin-top: 6vw;
+            margin-bottom: 3vw;
+            padding: 4px;
+            width: 100%;
+            background-color: #ffc000;
+            border: 3px;
+            border-radius: 15px;
+            color: white;
+            box-shadow: 1px 1px 2px black;
+            font-weight: bold;
+            text-align: center;
+
+        }
+
+        div.topico1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: #EA702A;
+            border: 3px;
+            border-top-left-radius: 100px;
+            border-bottom-left-radius: 100px;
+            box-shadow: 1px 1px 2px black;
+            margin: 10px;
+        }
+
+        div.topico2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: #9A9A9A;
+            border: 3px;
+            border-top-left-radius: 100px;
+            border-bottom-left-radius: 100px;
+            box-shadow: 1px 1px 2px black;
+            margin: 10px;
+        }
+
+        div.topico3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: #F7C02F;
+            border: 3px;
+            border-top-left-radius: 100px;
+            border-bottom-left-radius: 100px;
+            box-shadow: 1px 1px 2px black;
+            margin: 10px;
+        }
+
+        div.topico4 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            background-color: #448BCB;
+            border: 3px;
+            border-top-left-radius: 100px;
+            border-bottom-left-radius: 100px;
+            box-shadow: 1px 1px 2px black;
+            margin: 10px;
+        }
+
+        div.topico5 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            background-color: #64A638;
+            border: 3px;
+            border-top-left-radius: 100px;
+            border-bottom-left-radius: 100px;
+            box-shadow: 1px 1px 2px black;
+            margin: 10px;
+        }
+
+        img.icons {
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+            margin-bottom: 20px
+        }
+
+        div.divFlex {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+
+        <h1>
+            <span><strong>Potássio – Cloreto de potássio</strong></span>
+        </h1>
+        <!--sumario -->
+        <div style="margin-top: 50px; font-size: 3.5vw">
+            <p class="sumario">Sumário:</p>
+            <ul>
+                <li><a href="#apresentacaoDroga">Apresentação da droga</a></li>
+                <li><a href="#cloretoDeSodio">Cloreto de sódio – NACL</a></li>
+              
+                    <ul>
+                        <li><a href="#cloretoDeSodio">Apresentação</a></li>
+                        <li><a href="#indicacaoSodio">Indicação</a></li>
+                        <li><a href="#contraindicacaoSodio">Contraindicação</a></li>
+                        <li><a href="#cuidadosSodio">Cuidados específicos e monitoramento</a></li>
+                        <li><a href="#doseSodio">Dose</a></li>
+                        <li><a href="#viaAdmSodio">Via de administração</a></li>
+                        <li><a href="#doseSodio">Administração</a></li>
+                        <li><a href="#interacaoSodio">Interação medicamentosa</a></li>
+                        <li><a href="#efeitosAdversosSodio"> Efeitos adversos</a></li>
+                        <li><a href="#estabilidadeSodio">Estabilidade/Conservação</a></li>
+                        <li><a href="#toxicologiaSodio">Toxicologia</a></li>
+                        <li><a href="#gestacaoSodio">Uso durante a gestação</a></li>
+
+                    </ul>
+           
+
+                <li><a href="#cloretoPotassio">Cloreto de potássio - KCL</a></li>
+                    <ul>
+                        <li><a href="#cloretoPotassio">Apresentação</a></li>
+                        <li><a href="#indicacaoPotassio">Indicação</a></li>
+                        <li><a href="#contraindicacaoPotassio">Contraindicação</a></li>
+                        <li><a href="#gestacaoPotassio">Uso durante a gestação</a></li>
+                        <li><a href="#admPotassio">Via de administração</a></li>
+                        <li><a href="#admPotassio">Administração</a></li>
+                        <li><a href="#diluicaoPotassio">Diluição</a></li>
+                        <li><a href="#ajustePotassio">Ajuste da dose</a></li>
+                        <li><a href="#concentracaoPotassio">Concentração máxima </a></li>
+                        <li><a href="#velocidadePotassio">Velocidade da infusão</a></li>
+                        <li><a href="#estabilidadePotassio">Estabilidade/Conservação</a></li>
+                        <li><a href="#cuidadosPotassio">Cuidados específicos e monitoramento</a></li>
+                        <li><a href="#interacaoPotassio">Interação medicamentosa</a></li>
+                        <li><a href="#efeitosPotassio"> Efeitos adversos</a></li>
+                        <li><a href="#toxicologiaPotassio">Toxicologia</a></li>
+                    </ul>
+
+                <li><a href="#hipocloremia">Hipocloremia</a></li>
+                    <ul>
+                        <li><a href="#definicaoHipo">Definição</a></li>
+                        <li><a href="#causasHipocloremia">Causas</a></li>
+                        <li><a href="#sinaisHipo">Sinais e sintomas</a></li>
+                        <li><a href="#tratamentoHipo">Tratamento</a></li>
+                    </ul>
+
+                <li><a href="#hipercloremia">Hipercloremia</a></li>
+                    <ul>
+                        <li><a href="#definicaoHiper">Definição</a></li>
+                        <li><a href="#causasHiper">Causas</a></li>
+                        <li><a href="#sinaisHiper">Sinais e sintomas</a></li>
+                        <li><a href="#tratamentoHiper">Tratamento</a></li>
+                    </ul>
+
+            </ul>
+        </div>
+        <!-- fim do sumario -->
+
+        <!-- apresentacao -->
+        <p id="apresentacaoDroga" class="title"> <span><strong>Apresentação da droga</strong></span></p>
+        <p class="text">
+            Entre as causas das alterações do cloro estão aquelas relacionadas ao sódio, pois estes têm estreita relação
+            entre si. No entanto, existem alterações no cloro independentes dos níveis de sódio, as quais estão
+            relacionadas com o equilíbrio ácido básico.
+        </p>
+        <p class="topico1"
+            style="border-radius: 15px; background-color:#F7C02F; text-align: center; font-size:3.2vw; padding: 5px">
+            <strong> Para a correção da hipocloremia é orientado a administração de líquidos ricos em cloreto, podendo
+                assim ser utilizado a suplementação tanto do cloreto de sódio como do cloreto de potássio, se indicado
+            </strong>
+        </p>
+        <!-- fim apresentacao  -->
+
+        <!-- novo topico -->
+        <p id="cloretoDeSodio" class="topico">Cloreto de sódio – NaCl</p>
+
+            <img src="conteudo6.png" alt="Banner" width="100%"
+                style="height: 100%; object-fit: cover; margin-bottom: 20px;" />
+
+
+            <p id="indicacaoSodio" class="title"><span>Indicação</span></p>
+            <div>
+                <img src="conteudo6_a.png" alt="Banner" width="100%"
+                    style="height: 100%; object-fit: cover; margin-bottom: 20px;" />
+            </div>
+
+            <p id="contraindicacaoSodio" class="title"><span>Contraindicação</span></p>
+            <div>
+                <div class="divFlex">
+                    <img src="conteudo6_x.png" alt="Banner" width="240"
+                        style="height:240px; object-fit: cover; margin-bottom: 20px; margin-left: 2px; margin-right: 30px" />
+                    <ul>
+                        <li>
+                            Hipersensibilidade aos componentes da droga, em casos de hipernatremia, retenção hídrica e
+                            hipercloremia.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <p id="cuidadosSodio" class="title"><span>Cuidados Específicos e monitoramento</span></p>
+            <div style="display: flex; align-items:center; justify-content: center; ">
+                <img class="icons" src="conteudo6_aviso.png" alt="icons" />
+                <div class="topico1">
+                    <p class="textTopico">A solução injetável contendo cloreto de sódio deve ser administrada com
+                        cautela em pacientes com hipertensão, insuficiência cardíaca congestiva, nefropatias, com
+                        pré-eclampsia, edema pulmonar e obstrução do trato urinário.
+                    </p>
+                </div>
+            </div>
+            <div style="display: flex; align-items:center; justify-content: center; ">
+                <img class="icons" src="conteudo6_aviso.png" alt="icons" />
+                <div class="topico2">
+                    <p class="textTopico">Não é aconselhado que a concentração sérica de sódio do paciente aumente ou
+                        diminua mais do que 12mEq/L de correção em 24 horas, devido ao risco de síndrome desmielinizante
+                        no caso de correção demasiadamente rápida para hiponatremia e de edema cerebral na correção da
+                        hipernatremia. Em geral, em casos sintomáticos, um aumento na concentração de 4 a 6 mEq/L é
+                        satisfatório para controlar os sintomas. </p>
+                </div>
+            </div>
+
+            <p id="doseSodio" class="title"><span>Dose</span></p>
+            <p class="text">A administração é definida de acordo com as necessidades individuais de cada paciente.</p>
+            <img src="conteudo6_b.png" alt="Banner" width="100%"
+                style="height: 100%; object-fit: cover; margin-bottom: 20px;" />
+            <p class="text">Antes de serem administradas, as soluções parenterais devem ser inspecionadas visualmente
+                para se observar a presença de partículas, turvação na solução, fissuras e quaisquer violações na
+                embalagem primária.</p>
+
+            <p id="viaAdmSodio" class="title"><span>Via de administração</span></p>
+            <img src="conteudo6_c.png" alt="Banner" width="100%"
+                style="height: 100%; object-fit: cover; margin-bottom: 20px;" />
+
+            <p id="interacaoSodio" class="title"><span>Interação medicamentosa</span></p>
+            <ul>
+                <li>Há incompatibilidade desta solução com anfotericina B, ocorrendo precipitação desta substância e com
+                    o glucagon. Consultar um farmacêutico sempre que necessário.
+                </li>
+                <li>Aconselha-se cautela em pacientes tratados com lítio.
+                </li>
+                <li>Alguns medicamentos, principalmente corticosteróides, podem reagir com este produto, aumentando seus
+                    efeitos adversos.</li>
+            </ul>
+
+            <p id="efeitosAdversosSodio" class="title"><span>Efeitos adversos</span></p>
+            <img src="conteudo6_d.png" alt="Banner" width="100%"
+                style="height: 100%; object-fit: cover; margin-bottom: 20px;" />
+
+            <p id="estabilidadeSodio" class="title"><span>Estabilidade/Conservação</span></p>
+            <ul>
+                <li>
+                    A solução injetável de cloreto de sódio tem duração de 24 horas em temperatura ambiente (entre 15°C
+                    e 30°C).
+                </li>
+                <li>
+                    É uma solução estéril e apirogênica, logo, não proceda em hipótese alguma a guarda e/ou conservação
+                    de volumes restantes das soluções utilizadas, devendo as mesmas serem descartadas.
+                </li>
+            </ul>
+
+            <p id="toxicologiaSodio" class="title"><span>Toxicologia</span></p>
+            <div>
+                <div class="divFlex">
+                    <ul>
+                        <li>A toxicidade relacionada ao cloro está, na maioria dos casos, relacionada ao aumento rápido
+                            das concentrações séricas de cloro.</li>
+                        <li>O monitoramento de cloro e a avaliação do paciente são extremamente importantes.</li>
+                    </ul>
+                    <img src="conteudo6_toxicologia.png" alt="Banner" width="250"
+                        style="height:250px; object-fit: cover; margin-bottom: 20px; margin-left: 2px; margin-right: 30px" />
+                </div>
+            </div>
+
+            <p id="gestacaoSodio" class="title"><span>Uso durante a gestação</span></p>
+            <div>
+                <div class="divFlex">
+                    <img src="conteudo6_gestacao.png" alt="Banner" width="250"
+                        style="height:250px; object-fit: cover; margin-bottom: 20px; margin-left: 2px; margin-right: 30px" />
+                    <p class="text">
+                        Categoria C: Não há estudos suficientes para certificar a segurança do medicamento durante a
+                        gravidez. O medicamento deve ser administrado apenas se o benefício potencial justificar o
+                        risco.
+                    </p>
+                </div>
+            </div>
+        <!-- fim do novo topico -->
+
+        <!-- novo topico -->
+        <p id="cloretoPotassio" class="topico">Cloreto de potássio – KCl</p>
+            <img src="conteudo6_e.png" alt="Banner" width="100%"
+                style="height: 100%; object-fit: cover; margin-bottom: 20px;" />
+
+
+            <p id="indicacaoPotassio" class="title"><span>Indicação</span></p>
+            <div>
+                <div class="divFlex">
+                    <img src="conteudo6_soro.png" alt="Banner" width="240"
+                        style="height:250px; object-fit: cover; margin-bottom: 20px; margin-left: 2px; margin-right: 30px" />
+                    <ul>
+                        <li>
+                            Tratamento e prevenção de hipocalemia.
+                        </li>
+                        <li>
+                            Tratamento e prevenção de hipocloremia.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <p id="contraindicacaoPotassio" class="title"><span>Contraindicação</span></p>
+            <div>
+                <div class="divFlex">
+                    <p class="text">
+                        Hipersensibilidade aos componentes da droga, insuficiência renal grave, doença de addison não
+                        tratada e hipercalemia.
+                    </p>
+                    <img src="conteudo6_x.png" alt="Banner" width="240"
+                        style="height:240px; object-fit: cover; margin-bottom: 20px; margin-left: 2px; margin-right: 30px" />
+                </div>
+            </div>
+
+
+            <p id="gestacaoPotassio" class="title"><span>Uso durante a gestação</span></p>
+            <div>
+                <div class="divFlex">
+                    <img src="conteudo6_gestacao.png" alt="Banner" width="250"
+                        style="height:250px; object-fit: cover; margin-bottom: 20px; margin-left: 2px; margin-right: 30px" />
+                    <p class="text">
+                        Categoria C: Não há estudos suficientes para avaliar a segurança deste medicamento durante a
+                        gravidez, sendo indicado apenas se o benefício potencial justificar o risco.
+                    </p>
+                </div>
+            </div>
+
+            <p id="admPotassio" class="title"><span>Administração</span></p>
+            <ul>
+                <li>Endovenosa. Somente deve ser administrado após a diluição.</li>
+                <li>O cloreto de potássio é um medicamento vesicante, podendo ser administrado via acesso periférico
+                    respeitando a concentração (adulto: menor ou igual a 10mL/250mL e pediatria: menor ou igual a
+                    6mL/250mL), seguindo orientações da diretriz para medicamento irritante/vesicante. Para
+                    concentrações maiores considerar o uso de acesso central.</li>
+            </ul>
+
+            <p id="diluicaoPotassio" class="title"><span>Diluição</span></p>
+            <img src="conteudo6_f.png" alt="Banner" width="100%"
+                style="height: 100%; object-fit: cover; margin-bottom: 20px;" />
+
+            <p id="ajustePotassio" class="title"><span>Ajuste da dose</span></p>
+            <div class="topico1" style="border-radius: 10px;">
+                <p class="textTopico">Insuficiência renal: Utilizar com cautela.</p>
+            </div>
+            <div class="topico2" style="border-radius: 10px;">
+                <p class="textTopico">Insuficiência hepática: Não é necessário ajuste de dose.</p>
+            </div>
+
+
+            <p id="concentracaoPotassio" class="title"><span>Concentração Máxima</span></p>
+            <img src="conteudo6_g.png" alt="Banner" width="100%"
+                style="height: 100%; object-fit: cover; margin-bottom: 20px;" />
+
+            <p id="velocidadePotassio" class="title"><span>Velocidade da infusão</span></p>
+            <img src="conteudo6_h.png" alt="Banner" width="100%"
+                style="height: 100%; object-fit: cover; margin-bottom: 20px;" />
+
+
+            <p id="estabilidadePotassio" class="title"><span>Estabilidade/Conservação</span></p>
+            <ul>
+                <li>
+                    Duração de 24 horas em temperatura ambiente.
+                </li>
+            </ul>
+
+
+
+            <p id="cuidadosPotassio" class="title"> <span><strong>Cuidados específicos e monitoramento</strong></span>
+            </p>
+            <div style="display: flex; align-items:center; justify-content: center;">
+                <img src="conteudo6_aviso.png" alt="Icons" class="icons" />
+                <div class="topico1">
+                    <p class="textTopico">Pacientes com administração de potássio por via parenteral devem ser
+                        monitorados cuidadosamente</p>
+                </div>
+            </div>
+            <div style="display: flex; align-items:center; justify-content: center;">
+                <img src="conteudo6_aviso.png" alt="Icons" class="icons" />
+                <div class="topico2">
+                    <p class="textTopico">Deve-se avaliar a função renal, cardíaca ou qualquer condição que possa
+                        colaborar para alterações na concentração de potássio sérica (Exemplo: alcalose, acidose)</p>
+                </div>
+            </div>
+            <div style="display: flex; align-items:center; justify-content: center;">
+                <img src="conteudo6_aviso.png" alt="Icons" class="icons" />
+                <div class="topico3">
+                    <p class="textTopico">Distúrbios ácido/base: Usar cuidadosamente em paciente com alterações
+                        ácido/base, pois variações na concentração sérica de potássio podem acontecer durante a correção
+                        do distúrbio ácido/base;</p>
+                </div>
+            </div>
+            <div style="display: flex; align-items:center; justify-content: center;">
+                <img src="conteudo6_aviso.png" alt="Icons" class="icons" />
+                <div class="topico4">
+                    <p class="textTopico">Doença cardiovascular: Pacientes com disfunções cardiovasculares podem ser
+                        mais suscetíveis aos efeitos cardíacos relacionados à hiper/hipocalemia;</p>
+                </div>
+            </div>
+            <div style="display: flex; align-items:center; justify-content: center;">
+                <img src="conteudo6_aviso.png" alt="Icons" class="icons" />
+                <div class="topico5">
+                    <p class="textTopico">Distúrbios ácido/base: Usar cuidadosamente em paciente com alterações
+                        ácido/base, pois variações na concentração sérica de potássio podem acontecer durante a correção
+                        do distúrbio ácido/base;</p>
+                </div>
+            </div>
+            <div style="display: flex; align-items:center; justify-content: center;">
+                <img src="conteudo6_aviso.png" alt="Icons" class="icons" />
+                <div class="topico1">
+                    <p class="textTopico">Condições que modificam as concentrações de potássio: Doença de Addíson não
+                        tratada, trauma severo e queimaduras</p>
+                </div>
+            </div>
+            <div style="display: flex; align-items:center; justify-content: center;">
+                <img src="conteudo6_aviso.png" alt="Icons" class="icons" />
+                <div class="topico2">
+                    <p class="textTopico">Insuficiência renal: Utilizar com cautela em pacientes com disfunção renal e
+                        monitorar a concentração sérica de potássio. </p>
+                </div>
+            </div>
+            <div style="display: flex; align-items:center; justify-content: center;">
+                <img src="conteudo6_aviso.png" alt="Icons" class="icons" />
+                <div class="topico3">
+                    <p class="textTopico">Pacientes digitalizados: Pacientes digitalizados são mais propensos aos
+                        eventos adversos decorrentes de alterações abruptas nas concentrações de potássio sérico. </p>
+                </div>
+            </div>
+
+
+            <p id="interacaoPotassio" class="title"> <span><strong>Interação medicamentosa </strong></span></p>
+            <ul>
+                <li>Pode ter seu efeito aumentado por inibidores da Enzima Conversora de Angiotensina, diuréticos
+                    poupadores de potássio, heparina, anti-inflamatórios não esteroidais, e betabloqueadores.</li>
+                <li>O uso de cloreto de potássio pode intensificar os efeitos tóxicos de digitálicos, especialmente em
+                    pacientes com bloqueio cardíaco grave.</li>
+            </ul>
+
+            <p id="efeitosPotassio" class="title"><span>Efeitos adversos</span></p>
+            <img src="conteudo6_i.png" alt="Banner" width="100%"
+                style="height: 100%; object-fit: cover; margin-bottom: 20px;" />
+
+            <p id="toxicologiaPotassio" class="title"><span>Toxicologia</span></p>
+            <div>
+                <div class="divFlex">
+                    <ul>
+                        <li>Os sinais mais graves da hipercalemia são: Fraqueza muscular ou paralisia, anormalidades na
+                            condução cardíaca e arritmias cardíacas (geralmente com concentrações séricas de potássio
+                            acima de 8mEq/L), parada cardiorrespiratória e óbito (geralmente com concentrações séricas
+                            de potássio de 9 a 12mEq/L).
+                        </li>
+                    </ul>
+                    <img src="conteudo6_toxicologia.png" alt="Banner" width="250"
+                        style="height:250px; object-fit: cover; margin-bottom: 20px; margin-left: 2px; margin-right: 30px" />
+                </div>
+            </div>
+
+            <p style="font-size: 4vw; background-color: #FFF952; font-size:3.5vw">
+                VÍDEO: Cloreto de Potássio (KCL) e os CUIDADOS DE ENFERMAGEM <a
+                    href="https://www.youtube.com/watch?v=eH9rCKVFneQ">https://www.youtube.com/watch?v=eH9rCKVFneQ</a>
+            </p>
+
+        <!-- novo topico -->
+
+        <p id="hipocloremia" class="topico" style="text-align: center; background-color:#9A9A9A">
+            <span><strong>Hipocloremia</strong></span></p>
+
+            <p id="definicaoHipo" class="title"><span>Definição</span></p>
+            <p class="text">Quando os níveis séricos de cloro estão abaixo de 95 mEq/litro.</p>
+
+            <p id="causasHipocloremia" class="subtitle">Causas</p>
+            <div>
+                <div class="topico1" style="border-radius: 10px; height: 100px">
+                    <p class="textTopico">
+                        Entrada inadequada de Cl-, por dietas prolongadas com pouco sal</p>
+                </div>
+                <div class="topico2" style="border-radius: 10px; height: 100px">
+                    <p class="textTopico">
+                        Vômito excessivo</p>
+                </div>
+                <div class="topico3" style="border-radius: 10px; height: 100px">
+                    <p class="textTopico">
+                        Poliúria</p>
+                </div>
+                <div class="topico4" style="border-radius: 10px; height: 100px">
+                    <p class="textTopico">
+                        Super-hidratação</p>
+                </div>
+                <div class="topico5" style="border-radius: 10px; height: 110px">
+                    <p class="textTopico">
+                        Deficiência de aldosterona</p>
+                </div>
+                <div class="topico1" style="border-radius: 10px; height: 110px">
+                    <p class="textTopico">
+                        Insuficiência cardíaca</p>
+                </div>
+                <div class="topico2" style="border-radius: 10px; height: 110px">
+                    <p class="textTopico">
+                        Terapia com certos diuréticos, tais como a furosemida</p>
+                </div>
+            </div>
+
+
+            <p id="sinaisHipo" class="title"><span>Sinais e sintomas</span></p>
+            <img src="conteudo6_j.png" alt="Banner" width="100%"
+                style="height: 100%; object-fit: cover; margin-bottom: 20px;" />
+
+            <p id="tratamentoHipo" class="title"><span>Tratamento</span></p>
+            <img src="conteudo6_k.png" alt="Banner" width="100%"
+                style="height: 100%; object-fit: cover; margin-bottom: 20px;" />
+
+
+        <!-- novo topico -->
+
+        <p id="hipercloremia" class="topico" style="text-align: center; background-color:#9A9A9A">
+            <span><strong>Hipercloremia</strong></span></p>
+
+            <p id="definicaoHiper" class="title"><span>Definição</span></p>
+            <p class="text">Quando os níveis séricos de cloro estão acima de 105 mEq/litro.</p>
+
+            <p id="causasHiper" class="subtitle">Causas</p>
+            <div>
+                <div class="topico1" style="border-radius: 10px; height: 100px">
+                    <p class="textTopico">
+                        Desidratação</p>
+                </div>
+                <div class="topico2" style="border-radius: 10px; height: 100px">
+                    <p class="textTopico">
+                        Ingestão excessiva de cloreto</p>
+                </div>
+                <div class="topico3" style="border-radius: 10px; height: 100px">
+                    <p class="textTopico">
+                        Insuficiência renal grave</p>
+                </div>
+                <div class="topico4" style="border-radius: 10px; height: 100px">
+                    <p class="textTopico">
+                        Distúrbios acido-base</p>
+                </div>
+                <div class="topico5" style="border-radius: 10px; height: 110px">
+                    <p class="textTopico">
+                        Diabetes insípida</p>
+                </div>
+                <div class="topico1" style="border-radius: 10px; height: 110px">
+                    <p class="textTopico">
+                        Hiperaldosteronismo</p>
+                </div>
+                <div class="topico2" style="border-radius: 10px; height: 110px">
+                    <p class="textTopico">
+                        Alguns fármacos</p>
+                </div>
+            </div>
+
+
+            <p id="sinaisHiper" class="title"><span>Sinais e sintomas</span></p>
+            <img src="conteudo6_l.png" alt="Banner" width="100%"
+                style="height: 100%; object-fit: cover; margin-bottom: 20px;" />
+
+            <p id="tratamentoHiper" class="title"><span>Tratamento</span></p>
+            <p class="text">
+                Além da doença base, o tratamento abrange a supressão de entrada do cloro e a sua diluição no
+                compartimento extracelular por meio da infusão de solução glicosada 5% que, como para a hipernatremia,
+                não deve ser muito rápida pelo risco de edema cerebral.
+            </p>
+            <p style="font-size: 4vw; background-color: #FFF952; font-size:3.5vw">
+                VÍDEO: Será o CLORO o mais NOVO VILÃO? <a
+                    href="https://www.youtube.com/watch?v=lLFj-Y4l2Fk">https://www.youtube.com/watch?v=lLFj-Y4l2Fk</a>
+            </p>
+
+    </div>
+</body>
+
+</html>

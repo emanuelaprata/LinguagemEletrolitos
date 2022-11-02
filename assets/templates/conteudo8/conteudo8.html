@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="../libs/bootstrap.css">
+    <style>
+        @font-face {
+            font-family: "Lobster-Regular";
+            src: url("../../fonts/Metropolis-Regular.ttf") format("truetype");
+        }
+
+        html {
+            width: 100%;
+        }
+
+        body {
+            background-color: white;
+            font-size: 4vw;
+            width: 100%;
+            padding: 5%;
+        }
+
+        h1 {
+            font-family: Lobster-Regular;
+            font-size: 8vw;
+        }
+
+        p {
+            margin-top: 5vw;
+            margin-bottom: 5vw;
+        }
+
+        p.text {
+            margin-top: 2px;
+            font-size: 4vw
+        }
+
+        p.title {
+            font-weight: bold;
+            font-size: 5vw;
+        }
+
+        p.subtitle {
+            font-weight: bold;
+            font-size: 4.5vw;
+        }
+
+        p.topico {
+            margin-top: 6vw;
+            margin-bottom: 3vw;
+            font-size: 5vw;
+            padding: 4px;
+            width: 100%;
+            background-color: #C55A21;
+            border: 3px;
+            border-radius: 15px;
+            color: white;
+            box-shadow: 1px 1px 2px black;
+            font-weight: bold;
+            text-align: center;
+            font-style: italic;
+        }
+
+        p.textTopico {
+            font-size: 3vw;
+            padding: 5px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            margin-left: 10px;
+        }
+
+        div.topico {
+            margin-top: 6vw;
+            margin-bottom: 3vw;
+            padding: 4px;
+            width: 100%;
+            background-color: #ffc000;
+            border: 3px;
+            border-radius: 15px;
+            color: white;
+            box-shadow: 1px 1px 2px black;
+            font-weight: bold;
+            text-align: center;
+
+        }
+
+        div.topico1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: #EA702A;
+            border: 3px;
+            border-top-left-radius: 100px;
+            border-bottom-left-radius: 100px;
+            box-shadow: 1px 1px 2px black;
+            margin: 10px;
+        }
+
+        div.topico2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: #9A9A9A;
+            border: 3px;
+            border-top-left-radius: 100px;
+            border-bottom-left-radius: 100px;
+            box-shadow: 1px 1px 2px black;
+            margin: 10px;
+        }
+
+        div.topico3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: #F7C02F;
+            border: 3px;
+            border-top-left-radius: 100px;
+            border-bottom-left-radius: 100px;
+            box-shadow: 1px 1px 2px black;
+            margin: 10px;
+        }
+
+        div.topico4 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            background-color: #448BCB;
+            border: 3px;
+            border-top-left-radius: 100px;
+            border-bottom-left-radius: 100px;
+            box-shadow: 1px 1px 2px black;
+            margin: 10px;
+        }
+
+        div.topico5 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            background-color: #64A638;
+            border: 3px;
+            border-top-left-radius: 100px;
+            border-bottom-left-radius: 100px;
+            box-shadow: 1px 1px 2px black;
+            margin: 10px;
+        }
+
+        img.icons {
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+            margin-bottom: 20px
+        }
+
+        div.divFlex {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+
+        <h1>
+            <span><strong>Magnésio – Sulfato de magnésio</strong></span>
+        </h1>
+
+        <!-- sumario -->
+
+        <div style="margin-top: 50px; font-size: 3.5vw">
+            <p class="sumario">Sumário:</p>
+            <ul>
+                <li><a href="#apresentacaoDroga">Apresentação da droga</a></li>
+                <li><a href="#indicacao">Indicação</a></li>
+                <li><a href="#ajusteDose">Ajuste da dose</a></li>
+                <li><a href="#viaAdm">Via de administração</a></li>
+                <li><a href="#preparo">Preparo/diluição</a></li>
+                <li><a href="#Adm">Administração</a></li>
+                <li><a href="#estabilidade">Estabilidade/Conservação</a></li>
+                <li><a href="#toxicologia">Toxicologia</a></li>
+                <li><a href="#contraindicacao">Contraindicação</a></li>
+                <li><a href="#gestacao">Uso durante a gestação</a></li>
+
+
+                <li><a href="#hipomagnesemia">Hipomagnesemia</a></li>
+                    <ul>
+                        <li><a href="#definicaoHipo">Definição</a></li>
+                        <li><a href="#causasHipo">Causas</a></li>
+                        <li><a href="#sinaisHipo">Sinais e sintomas</a></li>
+                        <li><a href="#tratamentoHipo">Tratamento</a></li>
+                    </ul>
+
+                <li><a href="#hipermagnesemia">Hipermagnesemia</a></li>
+                    <ul>
+                        <li><a href="#definicaoHiper">Definição</a></li>
+                        <li><a href="#causasHiper">Causas</a></li>
+                        <li><a href="#sinaisHiper">Sinais e sintomas</a></li>
+                        <li><a href="#tratamentoHiper">Tratamento</a></li>
+                    </ul>
+            </ul>
+        </div>
+        <!-- fim do sumario -->
+
+
+        <p id="apresentacaoDroga" class="title"> <span><strong>Apresentação da droga</strong></span></p>
+        <img src="assets/conteudo8_conteudo8.png" alt="Banner" width="100%"
+            style="height: 100%; object-fit: cover; margin-bottom: 20px;" />
+
+        <!-- novo topico -->
+        <div>
+            <p id="cloretoInjetavel" class="topico">Sulfato de magnésio</p>
+                <p id="indicacao" class="title"><span>Indicação</span></p>
+                <div>
+                    <div class="divFlex">
+                        <img src="soro.png" alt="Banner" width="240"
+                            style="height:250px; object-fit: cover; margin-bottom: 20px; margin-left: 2px; margin-right: 30px" />
+                        <ul>
+                            <li>
+                                Hipomagnesia (menos de 1,5mEq/L)
+                            </li>
+                            <li>Crises convulsivas e toxemias severas (pré-eclâmpsia e eclâmpsia gravídica)</li>
+                            <li>Taquicardia atrial paroxística</li>
+                            <li>Intoxicação por bário</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p id="ajusteDose" class="title"><span>Ajuste de dose</span></p>
+                <ul>
+                    <li>Em pacientes renais orienta-se a diminuir a dose em 50%, usar com cautela e acompanhar
+                        atentamente a resposta clínica e o nível sérico. </li>
+                    <li>Em pacientes com dano severo da função renal, não exceder 20g em 48 horas.</li>
+                </ul>
+
+                <p id="viaAdm" class="title"><span>Via de Administração</span></p>
+                <img src="conteudo8_a.png" alt="Banner" width="100%"
+                    style="height: 100%; object-fit: cover; margin-bottom: 20px;" />
+
+                <p id="preparo" class="title"><span>Preparo / Diluição</span></p>
+                <img src="conteudo8_b.png" alt="Banner" width="100%"
+                    style="height: 100%; object-fit: cover; margin-bottom: 20px;" />
+
+                <p id="Adm" class="title"><span>Administração</span></p>
+                <img src="conteudo8_c.png" alt="Banner" width="100%"
+                    style="height: 100%; object-fit: cover; margin-bottom: 20px;" />
+
+
+                <p id="estabilidade" class="title"><span>Estabilidade / Conservação</span></p>
+                <p class="text">Duração de 48h em temperatura ambiente. </p>
+
+                <p id="toxicologia" class="title"><span>Toxicologia</span></p>
+                <img src="conteudo8_d.png" alt="Banner" width="100%"
+                    style="height: 100%; object-fit: cover; margin-bottom: 20px;" />
+
+
+                <p id="contraindicacao" class="title"> <span>Contraindicação</span></p>
+                <div>
+                    <div class="divFlex">
+                        <ul>
+                            <li>
+                                Pacientes com bloqueio e/ou dano cardíaco
+                            </li>
+                            <li>
+                                Pacientes com bloqueio e/ou dano cardíaco
+                            </li>
+                            <li>
+                                Estados de hipermagnesemia
+                            </li>
+                            <li>Administração EV em casos de eclâmpsia/pré-eclâmpsia até 2 horas antes do parto</li>
+                        </ul>
+                        <img src="x.png" alt="Banner" width="220"
+                            style="height:220px; object-fit: cover; margin-bottom: 20px; margin-left: 2px; margin-right: 30px" />
+                    </div>
+                </div>
+
+                <p id="gestacao" class="title"><span>Uso durante a gestação</span></p>
+                <div>
+                    <div class="divFlex">
+                        <img src="gestacao.png" alt="Banner" width="250"
+                            style="height:250px; object-fit: cover; margin-bottom: 20px; margin-left: 2px; margin-right: 30px" />
+                        <p class="text">
+                            ​Categoria D: Há evidência de risco ao feto, porém o uso do medicamento em situações graves
+                            pode ser considerado.
+                        </p>
+                    </div>
+                </div>
+
+        </div>
+
+        <!-- fim do topico -->
+
+        <!-- novo topico -->
+
+        <p id="hipomagnesemia" class="topico" style="text-align: center; background-color:#9A9A9A">
+            <span><strong>Hipomagnesemia</strong></span>
+        </p>
+
+            <p id="definicaoHipo" class="subtitle"><span>Definição</span></p>
+            <p class="text">Quando sua concentração se encontra abaixo da normalidade (entre 1,5 a 2,5 mEq/L) recebe a denominação de hipomagnesemia.</p>
+
+            <p id="causasHipo" class="subtitle">Causas</p>
+            <div>
+                <div class="topico1" style="border-radius: 10px; height: 100px">
+                    <p class="textTopico">
+                        Perda excessiva</p>
+                </div>
+                <div class="topico2" style="border-radius: 10px; height: 100px">
+                    <p class="textTopico">
+                        Alcoolismo</p>
+                </div>
+                <div class="topico3" style="border-radius: 10px; height: 100px">
+                    <p class="textTopico">
+                        Diabetes</p>
+                </div>
+                <div class="topico4" style="border-radius: 10px; height: 100px">
+                    <p class="textTopico">
+                        Terapia diurética</p>
+                </div>
+                <div class="topico5" style="border-radius: 10px; height: 110px">
+                    <p class="textTopico">
+                        Ingestão reduzida</p>
+                </div>
+            </div>
+
+            <p id="sinaisHipo" class="subtitle">Sinais e Sintomas</p>
+            <div>
+                <img src="assets/conteudo8_conteudo8_e.png" alt="Banner" width="100%"
+                    style="height:100% ; object-fit: cover; margin-bottom: 20px;" />
+            </div>
+
+            <p id="tratamentoHipo" class="subtitle">Tratamento</p>
+            <img src="assets/conteudo8_conteudo8_f.png" alt="Banner" width="100%"
+            style="height: 100%; object-fit: cover; margin-bottom: 20px;" />
+           
+
+        <!-- fim do topico -->
+
+        <!-- novo topico -->
+        <p id="hipermagnesemia" class="topico" style="text-align: center; background-color:#9A9A9A">
+            <span><strong>Hipermagnesemia</strong></span>
+        </p>
+
+            <p id="definicaoHiper" class="subtitle"><span>Definição</span></p>
+            <p class="text">Recebe a denominação de hipomagnesemia o aumento de magnésio no sangue, geralmente valores acima de 2,5 mEq/L. </p>
+
+            <p id="causasHiper" class="subtitle">Causas</p>
+            <p class="text">Esse distúrbio é raro devido à grande capacidade de excreção renal, quando ocorre, a principal causa é a insuficiência renal.</p>
+            
+
+            <p id="sinaisHiper" class="subtitle">Sinais e Sintomas</p>
+            <div>
+                <img src="assets/conteudo8_conteudo8_g.png" alt="Banner" width="100%"
+                    style="height:100% ; object-fit: cover; margin-bottom: 20px;" />
+            </div>
+
+            <p id="tratamentoHiper" class="subtitle">Tratamento</p>
+            <ul>
+                <li>Administração de cálcio e furosemida, este se a função renal estiver adequada.</li>
+                <li>A hemodiálise pode ser bastante útil na hipermagnesemia grave.</li>
+                <li>Considerar a administração de cálcio para pacientes com sintomas neuromusculares ou 
+                    cardiovasculares: 
+                    </li>
+            </ul>
+            <img src="assets/conteudo8_conteudo8_h.png" alt="Banner" width="100%"
+            style="height: 100%; object-fit: cover; margin-bottom: 20px;" />
+
+            <p style="font-size: 4vw; background-color: #FFF952; font-size:3.5vw">
+                DISTÚRBIOS ELETROLÍTICOS - MAGNÉSIO (hipomagnesemia e hipermagnesemia): <a href="https://www.youtube.com/watch?v=0XKIhQGvc7w">https://www.youtube.com/watch?v=0XKIhQGvc7w</a>
+            </p>           
+
+        <!-- fim do topico -->
+
+    </div>
+</body>
+
+</html>

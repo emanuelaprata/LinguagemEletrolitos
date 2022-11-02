@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="../libs/bootstrap.css">
+    <style>
+        @font-face {
+            font-family: "Lobster-Regular";
+            src: url("../../fonts/Metropolis-Regular.ttf") format("truetype");
+        }
+
+        html {
+            width: 100%;
+        }
+
+        body {
+            background-color: white;
+            font-size: 4vw;
+            width: 100%;
+            padding: 5%;
+        }
+
+        h1 {
+            font-family: Lobster-Regular;
+            font-size: 8vw;
+        }
+
+        p {
+            margin-top: 5vw;
+            margin-bottom: 5vw;
+        }
+
+        p.text {
+            margin-top: 2px;
+            font-size: 4vw
+        }
+
+        p.title {
+            font-weight: bold;
+            font-size: 5vw;
+        }
+
+        p.subtitle {
+            font-weight: bold;
+            font-size: 4.5vw;
+        }
+
+        p.topico {
+            margin-top: 6vw;
+            margin-bottom: 3vw;
+            font-size: 5vw;
+            padding: 4px;
+            width: 100%;
+            background-color: #C55A21;
+            border: 3px;
+            border-radius: 15px;
+            color: white;
+            box-shadow: 1px 1px 2px black;
+            font-weight: bold;
+            text-align: center;
+            font-style: italic;
+        }
+
+        p.textTopico {
+            font-size: 3vw;
+            padding: 5px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            margin-left: 10px;
+        }
+
+        div.topico {
+            margin-top: 6vw;
+            margin-bottom: 3vw;
+            padding: 4px;
+            width: 100%;
+            background-color: #ffc000;
+            border: 3px;
+            border-radius: 15px;
+            color: white;
+            box-shadow: 1px 1px 2px black;
+            font-weight: bold;
+            text-align: center;
+
+        }
+
+        div.topico1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: #EA702A;
+            border: 3px;
+            border-top-left-radius: 100px;
+            border-bottom-left-radius: 100px;
+            box-shadow: 1px 1px 2px black;
+            margin: 10px;
+        }
+
+        div.topico2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: #9A9A9A;
+            border: 3px;
+            border-top-left-radius: 100px;
+            border-bottom-left-radius: 100px;
+            box-shadow: 1px 1px 2px black;
+            margin: 10px;
+        }
+
+        div.topico3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: #F7C02F;
+            border: 3px;
+            border-top-left-radius: 100px;
+            border-bottom-left-radius: 100px;
+            box-shadow: 1px 1px 2px black;
+            margin: 10px;
+        }
+
+        div.topico4 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            background-color: #448BCB;
+            border: 3px;
+            border-top-left-radius: 100px;
+            border-bottom-left-radius: 100px;
+            box-shadow: 1px 1px 2px black;
+            margin: 10px;
+        }
+
+        div.topico5 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            background-color: #64A638;
+            border: 3px;
+            border-top-left-radius: 100px;
+            border-bottom-left-radius: 100px;
+            box-shadow: 1px 1px 2px black;
+            margin: 10px;
+        }
+
+        img.icons {
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+            margin-bottom: 20px
+        }
+
+        div.divFlex {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+
+        <h1>
+            <span><strong>Fosfato – Fosfato de potássio</strong></span>
+        </h1>
+
+        <!-- sumario -->
+
+        <div style="margin-top: 50px; font-size: 3.5vw">
+            <p class="sumario">Sumário:</p>
+            <ul>
+                <li><a href="#apresentacaoDroga">Apresentação da droga</a></li>
+                <li><a href="#indicacao">Indicação</a></li>
+                <li><a href="#viaAdm">Via de administração</a></li>
+                <li><a href="#preparo">Preparo/diluição</a></li>
+                <li><a href="#Adm">Administração</a></li>
+                <li><a href="#misturas">Incompatibilidade de misturas intravenosas</a></li>
+                <li><a href="#estabilidade">Estabilidade/Conservação</a></li>
+                <li><a href="#cuidados">Cuidados específicos e monitoramento</a></li>
+                <li><a href="#reacoes">Reações adversas </a></li>
+                <li><a href="#toxicologia">Toxicologia</a></li>
+                <li><a href="#contraindicacao">Contraindicação</a></li>
+                <li><a href="#gestacao">Uso durante a gestação</a></li>
+                <li><a href="#lactacao">Uso durante a lactação</a></li>
+
+                <li><a href="#hipofosfatemia">Hipofosfatemia</a></li>
+                    <ul>
+                        <li><a href="#definicaoHipo">Definição</a></li>
+                        <li><a href="#causasHipo">Causas</a></li>
+                        <li><a href="#sinaisHipo">Sinais e sintomas</a></li>
+                        <li><a href="#tratamentoHipo">Tratamento</a></li>
+                    </ul>
+
+                <li><a href="#hiperfosfatemia">Hiperfosfatemia</a></li>
+                    <ul>
+                        <li><a href="#definicaoHiper">Definição</a></li>
+                        <li><a href="#causasHiper">Causas</a></li>
+                        <li><a href="#sinaisHiper">Sinais e sintomas</a></li>
+                        <li><a href="#tratamentoHiper">Tratamento</a></li>
+                    </ul>
+            </ul>
+        </div>
+        <!-- fim do sumario -->
+
+        <!-- novo topico -->
+        <div>
+            <p class="topico">Fosfato de potássio</p>
+                <p id="apresentacaoDroga" class="title"> <span><strong>Apresentação da droga</strong></span></p>
+                <img src="conteudo9.png" alt="Banner" width="100%"
+                    style="height: 100%; object-fit: cover; margin-bottom: 20px;" />
+
+                <p id="indicacao" class="title"><span>Indicação</span></p>
+                <div>
+                    <div class="divFlex">
+                        <img src="conteudo9_soro.png" alt="Banner" width="240"
+                            style="height:250px; object-fit: cover; margin-bottom: 20px; margin-left: 2px; margin-right: 30px" />
+                        <p class="text">Tratamento e prevenção de hipofosfatemia.</p>
+                    </div>
+                </div>
+
+                <p id="viaAdm" class="title"><span>Via de Administração</span></p>
+                <p class="text">Endovenosa (somente administrar o medicamento após diluição).</p>
+
+                <p id="preparo" class="title"><span>Preparo / Diluição</span></p>
+                <p class="text">​Diluição em SF 0,9%, SG 5% e SGF. Volume sugerido: 250mL</p>
+
+                <p id="Adm" class="title"><span>Velocidade de Infusão</span></p>
+                <div style="border: 3px solid rgb(0, 0, 0); ">
+                    <div>
+                        <p class="text" style="background-color: #FAC02F; font-weight:bold; text-align:center;
+                    border-bottom: 3px solid rgb(0, 0, 0)">ADULTO</p>
+                        <ul style="margin: 20px;">
+                            <li>O tempo de infusão depende da dose a ser administrada, cada ampola deve ser infundida em
+                                2 ou mais horas. Se administrar por acesso venoso central, a taxa de infusão máxima é de
+                                1 ampola (10mL) em 1h20min. </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="text"
+                            style="background-color: #FAC02F; font-weight:bold; text-align:center; border-bottom: 3px solid black; border-top: 3px solid black;">
+                            PEDIATRA</p>
+                        <ul style="margin: 20px;">
+                            <li>A taxa de perfusão não deve exceder a 0,2mmol/kg/hora.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p id="mistura" class="title"><span>Incompatibilidade de misturas intravenosas</span></p>
+                <p class="text">Não administrar na mesma bolsa ou mesma linha (em Y), solução de fosfato de potássio com
+                    solução de sais de cálcio, devido ao risco de formação de precipitado. </p>
+
+                <p id="estabilidade" class="title"><span>Estabilidade / Conservação</span></p>
+                <p class="text">Após a diluição, a solução deve ser utilizada em 24 horas.</p>
+
+                <p id="cuidados" class="title"><span>Cuidados específicos e monitoramento</span></p>
+                <div style="display: flex; align-items:center; justify-content: center; ">
+                    <img class="icons" src="conteudo9_aviso.png" alt="icons" />
+                    <div class="topico1">
+                        <p class="textTopico">Situações que exigem atenção especial​: Pacientes com hipercalemia,
+                            insuficiência renal, doenças cardíacas, alcalose ou acidose metabólica e pacientes
+                            digitalizados.
+                        </p>
+                    </div>
+                </div>
+                <div style="display: flex; align-items:center; justify-content: center; ">
+                    <img class="icons" src="conteudo9_aviso.png" alt="icons" />
+                    <div class="topico2">
+                        <p class="textTopico">Durante a reposição de fosfato é recomendado avaliar os níveis de cálcio,
+                            magnésio, fósforo e potássio a cada 6h.</p>
+                    </div>
+                </div>
+
+                <p id="reacoes" class="title"><span>Reações adversas</span></p>
+                <img src="./conteudo_9a.png" alt="Banner" width="100%"
+                    style="height: 100%; object-fit: cover; margin-bottom: 20px;" />
+
+                <p id="toxicologia" class="title"><span>Toxicologia</span></p>
+                <div>
+                    <div class="divFlex">
+                        <ul>
+                            <li>As manifestações mais relevantes da hipercalemia/hiperfosfatemia são: náusea/vômito, dor abdominal, diarréia, alteração do estado mental, fraqueza, desidratação, hipernatremia e hipotensão. 
+                            </li>
+                            <li>Altas concentrações plasmáticas de potássio podem ser fatais, devido a depressão cardíaca e arritmias.
+                            </li>
+                        </ul>
+                        <img src="conteudo9_toxicologia.png" alt="Banner" width="250"
+                            style="height:250px; object-fit: cover; margin-bottom: 20px; margin-left: 2px; margin-right: 30px" />
+                    </div>
+                </div>
+
+                <p id="contraindicacao" class="title"> <span>Contraindicação</span></p>
+                <div>
+                    <div class="topico1" style="border-radius: 10px; height: 100px">
+                        <p class="textTopico">
+                            Hipoparatireoidismo</p>
+                    </div>
+                    <div class="topico2" style="border-radius: 10px; height: 100px">
+                        <p class="textTopico">
+                            Hiperfosfatemia</p>
+                    </div>
+                    <div class="topico3" style="border-radius: 10px; height: 100px">
+                        <p class="textTopico">
+                            Hipercalemia</p>
+                    </div>
+                    <div class="topico4" style="border-radius: 10px; height: 100px">
+                        <p class="textTopico">
+                            Doenças cardíacas
+                        </p>
+                    </div>
+                    <div class="topico5" style="border-radius: 10px; height: 110px">
+                        <p class="textTopico">
+                            Doença de Addison </p>
+                    </div>
+                    <div class="topico1" style="border-radius: 10px; height: 110px">
+                        <p class="textTopico">
+                            Desidratação aguda
+                        </p>
+                    </div>
+                    <div class="topico2" style="border-radius: 10px; height: 110px">
+                        <p class="textTopico">
+                            Queimaduras severas</p>
+                    </div>
+                    <div class="topico3" style="border-radius: 10px; height: 110px">
+                        <p class="textTopico">
+                            Miotonia congênita</p>
+                    </div>
+                    <div class="topico4" style="border-radius: 10px; height: 110px">
+                        <p class="textTopico">
+                            Hipocalemia tetânica</p>
+                    </div>
+                    <div class="topico5" style="border-radius: 10px; height: 110px">
+                        <p class="textTopico">
+                            Urolitíase</p>
+                    </div>
+                    <div class="topico1" style="border-radius: 10px; height: 110px">
+                        <p class="textTopico">
+                            Insuficiência renal severa (menos de 30% da função renal normal)</p>
+                    </div>
+                    <div class="topico2" style="border-radius: 10px; height: 110px">
+                        <p class="textTopico">
+                            Infecções do trato urinário causada por organismos desdobradores de ureia</p>
+                    </div>
+                    <div class="topico3" style="border-radius: 10px; height: 110px">
+                        <p class="textTopico">
+                            Fibrilação ventricular</p>
+                    </div>
+                    <div class="topico4" style="border-radius: 10px; height: 110px">
+                        <p class="textTopico">
+                            Hiperadrenalismo associado à síndrome adrenogenital</p>
+                    </div>
+                    <div class="topico5" style="border-radius: 10px; height: 110px">
+                        <p class="textTopico">
+                            Cãimbras severas</p>
+                    </div>
+                    <div class="topico1" style="border-radius: 10px; height: 110px">
+                        <p class="textTopico">
+                            Sensibilidade aumentada ao potássio como em adinamia (debilidade geral) hereditária ou paramiotonia congênita</p>
+                    </div>
+                </div>
+
+                <p id="gestacao" class="title"><span>Uso durante a gestação</span></p>
+                <div>
+                    <div class="divFlex">
+                        <img src="conteudo9_gestacao.png" alt="Banner" width="250"
+                            style="height:250px; object-fit: cover; margin-bottom: 20px; margin-left: 2px; margin-right: 30px" />
+                        <p class="text">
+                            Categoria C: Não há estudos suficientes para avaliar a segurança do medicamento durante a gravidez. O medicamento deve ser administrado apenas se o benefício potencial justificar o risco.
+                        </p>
+                    </div>
+                </div>
+
+                <p id="lactacao" class="title"><span>Uso durante a Lactação</span></p>
+                <p class="text">Não há restrições.</p>
+        </div>
+        <!-- fim do topico -->
+
+        <!-- novo topico -->
+        <p id="hipofosfatemia" class="topico" style="text-align: center; background-color:#9A9A9A">
+            <span><strong>Hipofosfatemia</strong></span>
+        </p>
+
+            <p id="definicaoHipo" class="subtitle"><span>Definição</span></p>
+            <p class="text">Caracteriza-se por concentração plasmática de fosfato < 2,5 mg/dL (0,81 mmol/L).</p>
+
+            <p id="causasHipo" class="subtitle">Causas</p>
+            <div>
+                <div class="topico1" style="border-radius: 10px; height: 100px">
+                    <p class="textTopico">
+                        Perdas urinárias</p>
+                </div>
+                <div class="topico2" style="border-radius: 10px; height: 100px">
+                    <p class="textTopico">
+                        Diminuição na absorção intestinal ou aumento na utilização</p>
+                </div>
+                <div class="topico3" style="border-radius: 10px; height: 100px">
+                    <p class="textTopico">
+                        Alcoolismo</p>
+                </div>
+                <div class="topico4" style="border-radius: 10px; height: 100px">
+                    <p class="textTopico">
+                       Queimaduras</p>
+                </div>
+            </div>
+
+            <p id="sinaisHipo" class="subtitle">Sinais e Sintomas</p>
+            <div>
+                <img src="conteudo_9b.png" alt="Banner" width="100%"
+                    style="height:100% ; object-fit: cover; margin-bottom: 20px;" />
+            </div>
+
+            <p id="tratamentoHipo" class="subtitle">Tratamento</p>
+            <img src="conteudo_9c.png" alt="Banner" width="100%"
+                style="height: 100%; object-fit: cover; margin-bottom: 20px;" />
+            <p class="text">Não há estudo prospectivo acerca de reposição de fosfato em crianças. As recomendações posológicas embasadas no peso para adultos devem ser aplicadas com cautela em pacientes pediátricos.</p>
+            <ul>
+            <li> Em nutrição parenteral:</li>    
+            <ul>            
+                <li>Adulto: 20-40mmol (2 ampolas/ 24 horas).</li>
+                <li>Pediatria: > 50kg, considerar dose de adulto; < 50kg: 0,5-2,0mmol de fosfato/kg/ 24horas.</li>
+                <li>Atentar-se ao potássio sérico do paciente, se > 4,0mEq/L considerar reposição de fosfato por outros sais (glicerofosfato de sódio).</li>
+            </ul>
+        </ul>
+
+        <!-- fim do topico -->
+
+        <!-- novo topico -->
+        <p id="Hiperfosfatemia" class="topico" style="text-align: center; background-color:#9A9A9A">
+            <span><strong>Hiperfosfatemia</strong></span>
+        </p>
+
+            <p id="definicaoHiper" class="subtitle"><span>Definição</span></p>
+            <p class="text">Caracteriza-se pela concentração plasmática de fosfato > 4,5 mg/dL (> 1,46 mmol/L).</p>
+
+            <p id="causasHiper" class="subtitle">Causas</p>
+            <div>
+                <div class="topico1" style="border-radius: 10px; height: 100px">
+                    <p class="textTopico">
+                        Insuficiência renal</p>
+                </div>
+                <div class="topico2" style="border-radius: 10px; height: 100px">
+                    <p class="textTopico">
+                        Hipoparatireoidismo</p>
+                </div>
+                <div class="topico3" style="border-radius: 10px; height: 100px">
+                    <p class="textTopico">
+                        Acidose metabólica ou respiratória</p>
+                </div>
+                <div class="topico4" style="border-radius: 10px; height: 100px">
+                    <p class="textTopico">
+                        Aumento na ingestão na dieta ou destruição de células do corpo, liberando fosfato para o sangue
+                    </p>
+                </div>
+            </div>
+            
+            <p id="sinaisHiper" class="subtitle">Sinais e Sintomas</p>
+            <div>
+                <img src="conteudo_9d.png" alt="Banner" width="100%"
+                    style="height:100% ; object-fit: cover; margin-bottom: 20px;" />
+            </div>
+
+            <p id="tratamentoHiper" class="subtitle">Tratamento</p>
+            <img src="conteudo_9e.png" alt="Banner" width="100%"
+                style="height: 100%; object-fit: cover; margin-bottom: 20px;" />
+
+            <p style="font-size: 4vw; background-color: #FFF952; font-size:3.5vw">
+                METABOLISMO DO FOSFATO: <a href="https://www.youtube.com/watch?v=SHOzLVPpjks">https://www.youtube.com/watch?v=SHOzLVPpjks</a>
+            </p>
+
+        <!-- fim do topico -->
+
+    </div>
+</body>
+
+</html>

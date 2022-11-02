@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="../libs/bootstrap.css">
+    <style>
+        @font-face {
+            font-family: "Lobster-Regular";
+            src: url("../../fonts/Metropolis-Regular.ttf") format("truetype");
+        }
+
+        html {
+            width: 100%;
+        }
+
+        body {
+            background-color: white;
+            font-size: 4vw;
+            width: 100%;
+            padding: 5%;
+        }
+
+        h1 {
+            font-family: Lobster-Regular;
+            font-size: 8vw;
+            text-align: center;
+        }
+
+        p {
+            margin-top: 6vw;
+            margin-bottom: 3vw;
+            font-size: 5vw;
+        }
+
+        p.topico {
+            margin-top: 6vw;
+            margin-bottom: 3vw;
+            font-size: 5vw;
+            padding: 4px;
+            width: 100%;
+            background-color: #C55A21;
+            border: 3px;
+            border-radius: 15px;
+            color: white;
+            box-shadow: 1px 1px 2px black;
+            font-weight: bold;
+            text-align: center;
+            font-style: italic;
+        }
+
+        p.text {
+            margin-top: 2px;
+            font-size: 4vw
+        }
+
+        p.title {
+            font-weight: bold;
+            font-size: 5vw;
+        }
+
+        p.subtitle {
+            font-weight: bold;
+            font-size: 4.5vw;
+        }
+
+        p.sumario {
+            font-size: 3.5vw;
+            font-weight: 700;
+            margin-bottom: 0px;
+        }
+
+        p.textTopico {
+            margin: 0px;
+            padding: 20px;
+            font-size: 3.5vw;
+
+        }
+
+        div.topico1 {
+            width: 100%;
+            height: 150px;
+            background-color: #EA702A;
+            border: 3px;
+            border-top-left-radius: 100px;
+            border-bottom-left-radius: 100px;
+            color: white;
+            box-shadow: 1px 1px 2px black;
+            font-weight: bold;
+            text-align: center;
+            justify-content: center;
+            margin: 10px;
+            align-items: center;
+            display: flex;
+        }
+
+        div.topico2 {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 150px;
+            background-color: #9A9A9A;
+            border: 3px;
+            border-top-left-radius: 100px;
+            border-bottom-left-radius: 100px;
+            color: white;
+            box-shadow: 1px 1px 2px black;
+            font-weight: bold;
+            text-align: center;
+            justify-content: center;
+            margin: 10px;
+        }
+
+        div.topico3 {
+            width: 100%;
+            height: 150px;
+            background-color: #F7C02F;
+            border: 3px;
+            border-top-left-radius: 100px;
+            border-bottom-left-radius: 100px;
+            color: white;
+            box-shadow: 1px 1px 2px black;
+            font-weight: bold;
+            text-align: center;
+            justify-content: center;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        div.topico4 {
+            width: 100%;
+            height: 150px;
+            background-color: #448BCB;
+            border: 3px;
+            border-top-left-radius: 100px;
+            border-bottom-left-radius: 100px;
+            color: white;
+            box-shadow: 1px 1px 2px black;
+            font-weight: bold;
+            text-align: center;
+            justify-content: center;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        div.topico5 {
+            width: 100%;
+            height: 150px;
+            background-color: #64A638;
+            border: 3px;
+            border-top-left-radius: 100px;
+            border-bottom-left-radius: 100px;
+            color: white;
+            box-shadow: 1px 1px 2px black;
+            font-weight: bold;
+            text-align: center;
+            justify-content: center;
+            margin: 10px;
+            align-items: center;
+            display: flex;
+        }
+
+        div.divFlex {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+
+        <h1>
+            <span><strong>Potássio – Cloreto de potássio</strong></span>
+        </h1>
+
+        <div style="text-align: start;">
+
+            <div style="margin-top: 50px; font-size: 3.5vw">
+                <p class="sumario">Sumário:</p>
+                <ul>
+                    <li><a href="#apresentacao1">Apresentação da droga</a></li>
+                    <li><a href="#cloretoInjetavel">Cloreto de potássio 10% e 19,1% (injetável)</a></li>
+                        <ul>
+                            <li><a href="#indicacao1">Indicação</a></li>
+                            <li><a href="#contraindicacao1">Contraindicação</a></li>
+                            <li><a href="#gestacao">Uso durante a gestação</a></li>
+                            <li><a href="#diluicao">Diluição</a></li>
+                            <li><a href="#concentracaoMaxima">Concentração máxima</a> </li>
+                            <li><a href="#administracaoInjetavel">Administração</a></li>
+                            <li><a href="#velocidadeInfusao">Velocidade da infusão</a></li>
+                            <li><a href="#estabilidade">Estabilidade/Conservação</a></li>
+                            <li><a href="#cuidadosMonitoramento">Cuidados específicos e monitoramento</a></li>
+                            <li><a href="#interacaoMedicamentosa">Interação medicamentosa</a></li>
+                            <li><a href="#efeitosAdversos">Efeitos adversos</a></li>
+                            <li><a href="#toxicologia">Toxicologia</a></li>
+                        </ul>
+
+
+                    <li><a href="#cloretoOral">Cloreto de potássio (oral) </a></li>
+                
+                        <ul>
+                            <li><a href="#apresentacao2">Apresentação</a></li>
+                            <li><a href="#indicacao2">Indicação</a></li>
+                            <li><a href="#dose1">Dose</a></li>
+                            <li><a href="#administracaoOral">Administração</a></li>
+                        </ul>
+                
+
+                    <li><a href="#hipopotassemia">Hipopotassemia ou hipocalemia </a></li>
+                   
+                        <ul>
+                            <li><a href="#definicaoHipo">Definição</a></li>
+                            <li><a href="#causas1">Causas</a></li>
+                            <li><a href="#sinaisSintomas1">Sinais e sintomas</a></li>
+                            <!-- <li><a href="tratamento1">Tratamento</a></li> -->
+                            <li><a href="#dose2">Dose</a></li>
+                            <li><a href="#dose2">Ajuste da dose</a></li>
+                        </ul>
+                 
+
+                    <li><a href="#hiperpotassemia">Hiperpotassemia ou hipercalemia </a></li>
+              
+                        <ul>
+                            <li><a href="#definicaoHiper">Definição</a></li>
+                            <li><a href="#causas2">Causas</a></li>
+                            <li><a href="#sinaisSintomas2">Sinais e sintomas</a></li>
+                            <li> <a href="#achados">Principais achados no traçado eletrocardiográfico na hipercalemia
+                                </a></li>
+                            <li><a href="#tratamento">Tratamento</a></li>
+                        </ul>
+             
+                </ul>
+            </div>
+
+
+            <p id="apresentacao1"> <span><strong>Apresentação da droga</strong></span></p>
+            <img src="conteudo5_a.png" alt="Banner" width="100%"
+                style="height: 100%; object-fit: cover; margin-bottom: 20px;" />
+            <img src="conteudo5_a1.png" alt="Banner" width="100%"
+                style="height: 100%; object-fit: cover; margin-bottom: 20px;" />
+
+            <!-- novo topico -->
+
+            <div>
+                <p id="cloretoInjetavel" class="topico">Cloreto de potássio 10% e 19,1% (injetável)</p>
+                    <p id="indicacao1" class="title"><span>Indicação</span></p>
+                    <div>
+                        <div class="divFlex">
+                            <img src="conteudo5_soro.png" alt="Banner" width="240"
+                                style="height:250px; object-fit: cover; margin-bottom: 20px; margin-left: 2px; margin-right: 30px" />
+                            <ul>
+                                <li>
+                                    Tratamento e prevenção de hipocalemia.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p id="contraindicacao1" class="title"> <span>Contraindicação</span></p>
+                    <div>
+                        <div class="divFlex">
+                            <ul>
+                                <li>
+                                    Hipersensibilidade aos componentes da droga, insuficiência renal grave, doença de
+                                    addison
+                                    não
+                                    tratada e hipercalemia.
+
+                                </li>
+                            </ul>
+                            <img src="conteudo5_x.png" alt="Banner" width="220"
+                                style="height:220px; object-fit: cover; margin-bottom: 20px; margin-left: 2px; margin-right: 30px" />
+                        </div>
+                    </div>
+
+                    <p id="gestacao" class="title"><span>Uso durante a gestação</span></p>
+                    <div>
+                        <div class="divFlex">
+                            <img src="conteudo5_gestacao.png" alt="Banner" width="250"
+                                style="height:250px; object-fit: cover; margin-bottom: 20px; margin-left: 2px; margin-right: 30px" />
+                            <p class="text">
+                                Categoria C: Não há estudos suficientes para avaliar a segurança deste medicamento
+                                durante a
+                                gravidez, sendo indicado apenas se o benefício potencial justificar o risco.
+                            </p>
+                        </div>
+                    </div>
+
+                    <p id="diluicao" class="title"> <span>Diluição</span></p>
+                    <div>
+                        <ul>
+                            <li>SF 0,9%, SG 5% e ringer lactato.</li>
+                            <li>Não é aconselhável que a diluição seja realizada com SG 5% em caso de hipocalemia grave.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <p id="concentracaoMaxima" class="title"> <span>Concentração Máxima</span></p>
+                    <div>
+                        <img src="conteudo5_b.png" alt="Banner" width="100%"
+                            style="height:100% ; object-fit: cover; margin-bottom: 20px;" />
+                    </div>
+
+                    <p id="administracaoInjetavel" class="title"><span>Administração</span></p>
+                    <div>
+                        <ul>
+                            <li>Endovenosa: Somente realizar a administração após a diluição da droga.
+                            </li>
+                            <li>O cloreto de potássio injetável é um medicamento vesicante, podendo ser administrado via
+                                acesso
+                                periférico respeitando a concentração limite. Para maiores concentrações considerar o
+                                uso do
+                                acesso
+                                central.
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <p id="velocidadeInfusao" class="title"> <span>Velocidade da infusão</span></p>
+                    <div>
+                        <ul>
+                            <li>
+                                A concentração máxima de infusão em acesso periférico deve ser 10mEq/hora e em acesso
+                                central
+                                40mEq/hora.
+                            </li>
+                        </ul>
+                        <img src="c.png" alt="Banner" width="100%"
+                            style="height:100% ; object-fit: cover; margin-bottom: 20px;" />
+                    </div>
+
+                    <p id="estabilidade" class="title"><span>Estabilidade/Conservação</span></p>
+                    <div>
+                        <p class="text">Duração de 24 horas em temperatura ambiente.
+                        </p>
+                    </div>
+
+                    <p id="cuidadosMonitoramento" class="title"> <span>Cuidados Específicos e monitoramento</span></p>
+                    <div>
+                        <img src="conteudo5_d.png" alt="Banner" width="100%"
+                            style="height:100% ; object-fit: cover; margin-bottom: 20px;" />
+                    </div>
+
+                    <p id="interacaoMedicamentosa" class="title"> <span>Interação medicamentosa</span></p>
+                    <div>
+                        <div class="divFlex">
+                            <ul>
+                                <li>O Cloreto de Potássio pode ter seu efeito aumentado por inibidores da Enzima
+                                    Conversora
+                                    de
+                                    Angiotensina (ECA), diuréticos poupadores de potássio, heparina, antiinflamatórios
+                                    não
+                                    esteroidais, e betabloqueadores. </li>
+                                <li>O uso de cloreto de potássio pode intensificar os efeitos tóxicos de digitálicos,
+                                    especialmente
+                                    em pacientes com bloqueio cardíaco grave.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p id="efeitosAdversos" class="title"><span>Efeitos adversos</span></p>
+                    <div>
+                        <img src="conteudo5_e.png" alt="Banner" width="100%"
+                            style="height:100% ; object-fit: cover; margin-bottom: 20px;" />
+                    </div>
+
+                    <p id="toxicologia" class="title"> <span>Toxicologia</span></p>
+                    <div>
+                        <p class="text">Os sinais mais graves da hipercalemia são:
+                        </p>
+                        <img src="conteudo5_f.png" alt="Banner" width="100%"
+                            style="height:100% ; object-fit: cover; margin-bottom: 20px;" />
+                    </div>
+            </div>
+
+
+            <!-- novo tópico -->
+            <div>
+                <p id="cloretoOral" class="topico">Cloreto de Potássio oral</p>
+              
+                    <p id="apresentacao2" class="title"> <span><strong>Apresentação</strong></span></p>
+                    <p class="text">Solução Oral - 60mg/mL (frasco 150mL) (15mL = 900mg = 12mEq); 600mg/drágea (equivale
+                        a
+                        315mg de K+).</p>
+
+                    <p id="indicacao2" class="title"> <span><strong>Indicação</strong></span></p>
+                    <div class="divFlex">
+                        <img src="conteudo5_soro.png" alt="Banner" width="240"
+                            style="height:250px; object-fit: cover; margin-bottom: 20px; margin-left: 2px; margin-right: 30px" />
+                        <p class="text">Tratamento e prevenção da hipopotasemia.</p>
+                    </div>
+
+                    <p id="dose1" class="title"> <span><strong>Dose</strong></span></p>
+                    <div style="display: flex; border: 3px solid rgb(0, 0, 0); ">
+                        <div style="border-right: 3px solid rgb(0, 0, 0); ">
+                            <p class="text" style="background-color: #FAC02F; font-weight:bold; text-align:center;
+                            border-bottom: 3px solid rgb(0, 0, 0)">ADULTO</p>
+                            <p class="text" style="margin: 20px;"><strong>Xarope:</strong></p>
+                            <ul style="margin: 20px;">
+                                <li>15 a 30mL, 3 vezes/dia ajustados conforme exame laboratorial;</li>
+                            </ul>
+                            <p class="text" style="margin: 20px;"><strong>Drágea:</strong></p>
+                            <ul style="margin: 20px;">
+                                <li>Prevenção de hipocalemia:</li>
+                                <li>2-3 drágeas/dia; Correção de hipocalemia: 5-12 drágeas/dia.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="text"
+                                style="background-color: #FAC02F; font-weight:bold; text-align:center; border-bottom: 3px solid rgb(0, 0, 0);">
+                                PEDIATRA</p>
+                            <ul style="margin: 20px;">
+                                <li>1-2mEq/kg/dia VO.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p id="administracaoOral" class="title"> <span><strong>Administração</strong></span></p>
+                    <div class="topico1" style="border-radius: 3px; height: 150px">
+                        <p class="textTopico">
+                            Xarope:<br>
+                            Pode ser ingerido puro ou diluído em água ou suco.
+                        </p>
+                    </div>
+                    <div class="topico3" style="border-radius: 3px; height: 150px">
+                        <p class="textTopico">
+                            Drágea:<br>
+                            As drágeas devem ser ingeridas inteiras, logo após as refeições.
+                        </p>
+                    </div>
+
+            </div>
+
+            <!-- novo tópico -->
+            <div>
+                <p id="hipopotassemia" class="topico" style="text-align: center; background-color:#9A9A9A"> <span><strong>Hipopotassemia ou
+                            hipocalemia</strong></span></p>
+
+                    <p id="definicaoHipo" class="subtitle"><span>Definição</span></p>
+                    <p class="text">A hipocalemia ocorre quando as concentrações de íons de potássio apresentam-se
+                        inferiores à 3,5 mEq/L.
+                    </p>
+
+                    <p id="causas1" class="subtitle">Causas</p>
+                    <div>
+                        <div class="topico1" style="border-radius: 10px; height: 100px">
+                            <p class="textTopico">
+                                Vômito</p>
+                        </div>
+                        <div class="topico2" style="border-radius: 10px; height: 100px">
+                            <p class="textTopico">
+                                Diarreia</p>
+                        </div>
+                        <div class="topico3" style="border-radius: 10px; height: 100px">
+                            <p class="textTopico">
+                                Ingestão reduzida de potássio.</p>
+                        </div>
+                        <div class="topico4" style="border-radius: 10px; height: 100px">
+                            <p class="textTopico">
+                                Hiperaldosteronismo</p>
+                        </div>
+                        <div class="topico5" style="border-radius: 10px; height: 100px">
+                            <p class="textTopico">
+                                Doença renal</p>
+                        </div>
+                        <div class="topico1" style="border-radius: 10px; height: 100px">
+                            <p class="textTopico">
+                                Terapia diurética</p>
+                        </div>
+                        <div class="topico2" style="border-radius: 10px; height: 100px">
+                            <p class="textTopico">
+                                Deficiência de magnésio</p>
+                        </div>
+                    </div>
+
+                    <p id="sinaisSintomas1" class="subtitle">Sinais e Sintomas</p>
+                    <div>
+                        <img src="conteudo5_k.png" alt="Banner" width="100%"
+                            style="height:100% ; object-fit: cover; margin-bottom: 20px;" />
+                    </div>
+
+                    <p id="dose2" class="subtitle">Dose</p>
+                    <div style="border: 3px solid rgb(0, 0, 0); ">
+                        <div>
+                            <p class="text" style="background-color: #FAC02F; font-weight:bold; text-align:center;
+                        border-bottom: 3px solid rgb(0, 0, 0)">ADULTO</p>
+                            <ul style="margin: 20px;">
+                                <li>Hipocalemia grave e/ou paciente sintomático: Em geral, 20mEq de potássio aumenta a
+                                    concentração sérica em 0,25 mEq/L.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="text"
+                                style="background-color: #FAC02F; font-weight:bold; text-align:center; border-bottom: 3px solid black; border-top: 3px solid black;">
+                                PEDIATRA</p>
+                            <ul style="margin: 20px;">
+                                <li>Hipocalemia 0,5 – 0,75mEq/kg EV infundidos em 1-2h (dose máxima:40mEq). </li>
+                                <li>Iniciar monitorização cardíaca; Infusão de 0,3 a 0,5 mEq/Kg/h.</li>
+                                <li>Máximo 20mEq/h em crianças e 40mEq/h em adolescentes.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="text"
+                                style="background-color: #FAC02F; font-weight:bold; text-align:center; border-bottom: 3px solid black; border-top: 3px solid black; ">
+                                AJUSTE DA DOSE</p>
+                            <ul style="margin: 20px;">
+                                <li>Insuficiência renal: Utilizar com cautela.</li>
+                                <li>Insuficiência hepática: Não é necessário ajuste de dose.</li>
+                            </ul>
+                        </div>
+
+            </div>
+
+
+            <!-- novo topico -->
+
+            <div>
+                <p id="hiperpotassemia" class="topico" style="text-align: center; background-color:#9A9A9A"> <span><strong>Hiperpotassemia ou
+                            hipercalemia</strong></span></p>
+
+                    <p id="definicaoHiper" class="subtitle"><span>Definição</span></p>
+                    <p class="text">A hipercalemia ocorre quando a concentração de potássio sérico se encontra acima de
+                        5 mEq/L. </p>
+
+                    <p id="causas2" class="subtitle">Causas</p>
+                    <div>
+                        <div class="topico1" style="border-radius: 10px; height: 100px">
+                            <p class="textTopico">
+                                Ingestão excessiva de potássio;</p>
+                        </div>
+                        <div class="topico2" style="border-radius: 10px; height: 100px">
+                            <p class="textTopico">
+                                Insuficiência renal;</p>
+                        </div>
+                        <div class="topico3" style="border-radius: 10px; height: 100px">
+                            <p class="textTopico">
+                                Deficiência de aldosterona;</p>
+                        </div>
+                        <div class="topico4" style="border-radius: 10px; height: 100px">
+                            <p class="textTopico">
+                                Lesões por esmagamento;</p>
+                        </div>
+                        <div class="topico5" style="border-radius: 10px; height: 110px">
+                            <p class="textTopico">
+                                Transfusão de sangue hemolisado;</p>
+                        </div>
+                        <div class="topico1" style="border-radius: 10px; height: 200x">
+                            <p class="textTopico">
+                                Uso de fármacos, como diuréticos poupadores de potássio, inibidores da Enzima Conversora
+                                de Angiotensina e anti-inflamatórios não hormonais;</p>
+                        </div>
+                    </div>
+
+                    <p id="sinaisSintomas2" class="subtitle">Sinais e Sintomas</p>
+                    <div>
+                        <img srcconteudo5_h.png" alt="Banner" width="100%"
+                            style="height:100% ; object-fit: cover; margin-bottom: 20px;" />
+                    </div>
+
+                    <p id="achados" class="subtitle">Principais achados no traçado eletrocardiográfico na hipercalemia
+                    </p>
+                    <div>
+                        <ul>
+                            <li>Intervalo PR prolongado; </li>
+                            <li>
+                                Ondas T pontiagudas ou apiculadas (em forma de tenda);
+                            </li>
+                            <li>
+                                Alargamento do intervalo QRS e ausência ou achatamento das ondas P;
+                            </li>
+                            <li>Formação de onda sinusoidal;</li>
+                            <li>Fibrilação ventricular ou assistolia.</li>
+                        </ul>
+                        <img srcconteudo5_l.png" alt="Banner" width="100%"
+                            style="height:100%; object-fit: cover; margin-bottom: 20px; margin-left: 2px; margin-right: 30px" />
+                        <p style="font-size: 4vw; background-color: #FFF952; font-size:3.5vw">
+                            VÍDEO: Distúrbios do Potássio – <a
+                                href="https://www.youtube.com/watch?v=JMxWtbENkfU">https://www.youtube.com/watch?v=JMxWtbENkfU</a>.
+                        </p>
+                    </div>
+
+                    <p id="tratamento" class="subtitle">Tratamento</p>
+                    <div class="divFlex">
+                        <img srcconteudo5_aviso.png" alt="Banner" width="150px"
+                            style="height:150px ; object-fit: cover; margin-bottom: 20px;" />
+                        <ul>
+                            <li>Certificar se o paciente é verdadeiramente hipercalêmico (descartar pseudohipercalemia),
+                                realizar eletrocardiograma e, se confirmado as manifestações de hipercalemia, manter o
+                                paciente
+                                em monitoramento (ECG).
+                            </li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div>
+                        <div class="topico1" style="border-radius: 3px; height: 100px">
+                            <p class="textTopico">
+                                Alteração da polarização da membrana causada pela hipercalemia</p>
+                        </div>
+                        <div class="topico2" style="border-radius: 3px; height: 100px">
+                            <p class="textTopico">
+                                Cálcio</p>
+                        </div>
+                        <div class="topico3" style="border-radius: 3px; height: 100px">
+                            <p class="textTopico">
+                                Condução de potássio extracelular para dentro das células</p>
+                        </div>
+                        <div class="topico4" style="border-radius: 3px; height: 100px">
+                            <p class="textTopico">
+                                Insulina e glicose</p>
+                        </div>
+                        <div class="topico5" style="border-radius: 3px; height: 110px">
+                            <p class="textTopico">
+                                Retirada do excesso de potássio </p>
+                        </div>
+                        <div class="topico1" style="border-radius: 3px; height: 200x">
+                            <p class="textTopico">
+                                Resina de troca catiônica </p>
+                        </div>
+                        <div class="topico2" style="border-radius: 3px; height: 200x">
+                            <p class="textTopico">
+                                Diálise, com preferência para hemodiálise em casos graves</p>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div style="border: 3px solid rgb(0, 0, 0); ">
+                        <div>
+                            <p class="text" style="background-color: #c00404; color: white; font-weight:bold; text-align:center;
+                    border-bottom: 3px solid black; margin: 0px">Alteração da polarização da membrana causada pela
+                                hipercalemia</p>
+                            <p class="text" style="background-color: #FAC02F; font-weight:bold; margin: 0px; text-align:center;
+                    border-bottom: 3px solid rgb(0, 0, 0)">ADULTO</p>
+                            <ul style="margin: 20px;">
+                                <li>Cloreto de Cálcio 10% IV: 500mg a 1.000mg (5-10mL) em 2 a 3min (preferencialmente
+                                    por acesso central); ou Gluconato de Cálcio 10% IV: 1.000mg (10mL) em 2-3min (pode
+                                    ser infundido perifericamente em veia de grande calibre). O cálcio pode ser repetido
+                                    após 5 minutos se as alterações no ECG persistirem.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="text"
+                                style="background-color: #FAC02F; font-weight:bold; text-align:center; border-bottom: 3px solid black; border-top: 3px solid black;">
+                                PEDIATRA</p>
+                            <ul style="margin: 20px;">
+                                <li>Gluconato de Cálcio 10% IV: 0,5mL/kg (máximo 20mL) em infusão de 5 minutos.</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <p class="text" style="background-color: #c00404; color: white; font-weight:bold; text-align:center;
+                    border-bottom: 3px solid black; border-top: 3px solid black; margin: 0px">Condução de potássio
+                                extracelular: Glicose e insulina regular IV</p>
+                            <p class="text" style="background-color: #FAC02F; font-weight:bold; margin: 0px; text-align:center;
+                    border-bottom: 3px solid rgb(0, 0, 0)">ADULTO</p>
+                            <ul style="margin: 20px;">
+                                <li>10 unidades internacionais de insulina regular em 500mL de SG 10% em 60 minutos.
+                                </li>
+                                <li>Alternativamente pode ser administrado bolus de 10 unidades internacionais de
+                                    insulina regular, seguida da administração de 50mL de glicose 50%. </li>
+                                <li>A fim de evitar hipoglicemia, manter infusão de SG 10% a 50-75mL/h.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="text"
+                                style="background-color: #FAC02F; font-weight:bold; text-align:center; border-bottom: 3px solid black; border-top: 3px solid black;">
+                                PEDIATRA</p>
+                            <ul style="margin: 20px;">
+                                <li>0,1UI/kg de insulina regular (máximo de 10UI) somado a 0,5g/kg de glicose em 30
+                                    minutos.</li>
+                                <li>Crianças de até 5 anos devem receber glicose 10% na dose de 5mL/kg e crianças
+                                    maiores de 5 anos devem receber glicose 25% na dose de 2mL/kg (máximo de 25g).</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <p class="text" style="background-color: #c00404; color: white; font-weight:bold; text-align:center;
+                    border-bottom: 3px solid black; border-top: 3px solid black; margin: 0px">Retirada de Potássio.</p>
+                            <ul style="margin: 20px;">
+                                <li>Pode ser considerada a possibilidade de hemodiálise para pacientes com hipercalemia grave. A hemodiálise pode remover 25 a 50mEq/h de potássio. 
+                                </li>
+                            </ul>
+                        </div>
+                       
+                        <div>
+                            <p class="text" style="background-color: #c00404; color: white; font-weight:bold; text-align:center;
+                    border-bottom: 3px solid black; border-top: 3px solid black; margin: 0px">Poliestireno sulfonato de cálcio (resina de troca iônica)</p>
+                            <ul style="margin: 20px;">
+                                <li>O uso da resina de troca iônica não é efetiva com a utilização de apenas uma dose e deve ser utilizada com cautela devido aos riscos de eventos adversos. </li>
+                            </ul>
+                        </div>
+
+
+                        <div>
+                            <p class="text" style="background-color: #c00404; color: white; font-weight:bold; text-align:center;
+                    border-bottom: 3px solid black; border-top: 3px solid black; margin: 0px">Oral</p>
+                            <p class="text" style="background-color: #FAC02F; font-weight:bold; margin: 0px; text-align:center;
+                    border-bottom: 3px solid rgb(0, 0, 0)">ADULTO</p>
+                            <ul style="margin: 20px;">
+                                <li>Administrar 15g, VO, 3 vezes/dia.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="text"
+                                style="background-color: #FAC02F; font-weight:bold; text-align:center; border-bottom: 3px solid black; border-top: 3px solid black;">
+                                PEDIATRA</p>
+                            <ul style="margin: 20px;">
+                                <li>1g/kg/dia, administrada em doses divididas, em hiperpotassemia aguda (máximo 30g). A dose pode ser reduzida para 0,5g por quilograma de peso por dia, em doses divididas para tratamento de manutenção. </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <p class="text" style="background-color: #c00404; color: white; font-weight:bold; text-align:center;
+                    border-bottom: 3px solid black; border-top: 3px solid black; margin: 0px">Retal</p>
+                            <p class="text" style="background-color: #FAC02F; font-weight:bold; margin: 0px; text-align:center;
+                    border-bottom: 3px solid rgb(0, 0, 0)">ADULTO</p>
+                            <ul style="margin: 20px;">
+                                <li>Fornecer 50g de resina em 150mL de sorbitol. </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="text"
+                                style="background-color: #FAC02F; font-weight:bold; text-align:center; border-bottom: 3px solid black; border-top: 3px solid black;">
+                                PEDIATRA</p>
+                            <ul style="margin: 20px;">
+                                <li>Quando recusada por boca, ou em caso de vômito, a resina pode ser administrada por via retal, usando uma dose no mínimo igual à que deveria ser administrada por via oral, diluída na mesma proporção descrita para adultos.</li>
+                            </ul>
+                        </div>
+                    
+                    </div>
+
+                    <p style="font-size: 4vw; background-color: #FFF952; font-size:3.5vw">
+                        VÍDEO: Como tratar uma hipercalemia – <a href="https://www.youtube.com/watch?v=alteg9zj1Bs">https://www.youtube.com/watch?v=alteg9zj1Bs</a>.
+                    </p>
+            </div>
+
+            <!-- fim do topico -->
+
+
+        </div>
+</body>
+
+</html>
