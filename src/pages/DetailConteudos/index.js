@@ -15,10 +15,10 @@ export default function DetailConteudo(route) {
 
   let source
   if (Platform.OS === 'ios') {
-    let urlPath = 'file://templates/' + item.templateWeb + '/index.html'
-    source = { uri: urlPath }
+    let urlPath = item.templateWeb + '.html'
+    source = { uri: urlPath , baseUrl:'/'}
   } else {
-    let urlPath = 'file:///android_asset/templates/' + item.templateWeb + '/index.html'
+    let urlPath = 'file:///android_asset/custom/' + item.templateWeb + '.html'
     source = { uri: urlPath }
   }
 
@@ -39,7 +39,13 @@ export default function DetailConteudo(route) {
       </View>
 
       <View style={{ flex: 1, flexDirection: 'column' }}>
-        <WebView source={source} />
+        <WebView
+          allowFileAccess={true}
+          allowFileAccessFromFileURLs={true}
+          javaScriptEnabled={true}
+          originWhitelist={["file://"]}
+          source={source}
+        />
       </View>
     </View >
   );
