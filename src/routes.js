@@ -22,6 +22,6 @@ function Rotas() {
       </Stack.Navigator>
     </NavigationContainer>
   );
-}
+} 
 
 export default Rotas;

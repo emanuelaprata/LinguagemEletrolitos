@@ -32,34 +32,43 @@ export default function ListConteudo() {
     <View style={styles.screen}>
 
       <View View style={styles.header}>
-        <TouchableOpacity 
+        <TouchableOpacity
           onPress={goBack}>
           <View style={{ flexDirection: 'row', justifyContent: "space-between" }}>
-          <Icon name='home' type='feather' color='white' style={{ marginLeft: 20 }} />
-          <Text style={styles.headerText}>LINGUAGEM DOS ELETRÓLITOS</Text>
+            <Icon name='home' type='feather' color='white' style={{ marginLeft: 20 }} />
+            <Text style={styles.headerText}>LINGUAGEM DOS ELETRÓLITOS</Text>
           </View>
         </TouchableOpacity>
       </View>
 
-          <ScrollView
-            overScrollMode='always'
+      <View style={{ margin: 20, padding: 15, textAlign: 'center', backgroundColor: '#870202', borderRadius: 30 }}>
+        <TouchableOpacity
+          onPress={goBack}>
+          <View style={{ flexDirection: 'row', justifyContent: "center" }}>
+            <Text style={styles.headerText}>Calculadoras</Text>
+          </View>
+        </TouchableOpacity>
+      </View>
 
-            style={{ backgroundColor: 'white' }}>
-            {items.map((item, i) => {
-              return (
-                <View key={i} style={styles.card}>
-                  <TouchableOpacity onPress={(props) => {
-                    navigation.navigate('DetailConteudo', item)
-                  }}>
-                    <View style={{ backgroundColor: item.code }}>
-                      <Text style={styles.cardTitle}>{i+1+'.'} {item.title}</Text>
-                    </View>
-                  </TouchableOpacity>
+      <ScrollView
+        overScrollMode='always'
+
+        style={{ backgroundColor: 'white' }}>
+        {items.map((item, i) => {
+          return (
+            <View key={i} style={styles.card}>
+              <TouchableOpacity onPress={(props) => {
+                navigation.navigate('DetailConteudo', item)
+              }}>
+                <View style={{ backgroundColor: item.code }}>
+                  <Text style={styles.cardTitle}>{i + 1 + '.'} {item.title}</Text>
                 </View>
-              )
+              </TouchableOpacity>
+            </View>
+          )
 
-            })}
-          </ScrollView>
+        })}
+      </ScrollView>
     </View>
   );
 }
@@ -68,6 +77,7 @@ const styles = StyleSheet.create({
   screen: {
     flex: 1,
     display: "flex",
+    backgroundColor: 'white'
   },
   header: {
     flexDirection: 'row',
@@ -106,7 +116,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     marginLeft: 10,
     margin: 30,
-    fontWeight:'600',
+    fontWeight: '600',
     textAlign: 'center',
   },
 });
