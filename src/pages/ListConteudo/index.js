@@ -2,6 +2,7 @@ import React from 'react'
 import { useNavigation } from '@react-navigation/native'
 import { StyleSheet, Text, View, TouchableOpacity, SafeAreaView, ScrollView, ImageBackground, Image } from 'react-native';
 import { Icon } from "@rneui/themed";
+import Calculadora from '../calculadoras';
 
 export default function ListConteudo() {
 
@@ -41,9 +42,10 @@ export default function ListConteudo() {
         </TouchableOpacity>
       </View>
 
-      <View style={{ margin: 20, padding: 15, textAlign: 'center', backgroundColor: '#870202', borderRadius: 30 }}>
-        <TouchableOpacity
-          onPress={goBack}>
+      <View style={{ margin: 20, padding: 15, textAlign: 'center', backgroundColor: '#CD0000', borderRadius: 30 }}>
+      <TouchableOpacity onPress={() => {
+                navigation.navigate('Calculadora', Calculadora)
+              }}>
           <View style={{ flexDirection: 'row', justifyContent: "center" }}>
             <Text style={styles.headerText}>Calculadoras</Text>
           </View>

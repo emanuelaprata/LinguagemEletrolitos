@@ -8,6 +8,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from './pages/Home';
 import ListConteudo from './pages/ListConteudo'
 import DetailConteudo from './pages/DetailConteudos';
+import Calculadora from './pages/calculadoras';
 
 function Rotas() {
 
@@ -19,6 +20,7 @@ function Rotas() {
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="ListConteudo" component={ListConteudo} />
         <Stack.Screen name="DetailConteudo" component={DetailConteudo} />
+        <Stack.Screen name="Calculadora" component={Calculadora} />
       </Stack.Navigator>
     </NavigationContainer>
   );
