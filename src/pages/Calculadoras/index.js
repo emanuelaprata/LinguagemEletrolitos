@@ -28,7 +28,7 @@ export default function Calculadoras() {
 
             <View style={styles.container}>
 
-                <View style={{ margin: 20, padding: 15, textAlign: 'center', backgroundColor: '#CD0000', borderRadius: 30 }}>
+                <View style={styles.Input}>
                     <TouchableOpacity onPress={() => {
                         navigation.navigate('CalculadoraDiluicao', CalculadoraDiluicao)
                     }}>
@@ -38,7 +38,7 @@ export default function Calculadoras() {
                     </TouchableOpacity>
                 </View>
 
-                <View style={{ margin: 20, padding: 15, textAlign: 'center', backgroundColor: '#CD0000', borderRadius: 30 }}>
+                <View style={styles.Input}>
                     <TouchableOpacity onPress={() => {
                         navigation.navigate('Calculadoras', Calculadoras)
                     }}>
@@ -62,9 +62,7 @@ const styles = StyleSheet.create({
         justifyContent: "space-between",
         paddingTop: 50,
         paddingVertical: 15,
-        backgroundColor: '#CD0000',
-        borderColor: '#CD0000',
-        borderBottomWidth: 4,
+        backgroundColor: '#870202',
     },
     headerText: {
         color: 'white',
@@ -78,12 +76,10 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
     },
     Input: {
-        margin: 20,
-        fontSize: 20,
-        padding: 10,
-        borderRadius: 2,
-        borderColor: '#EECC2D',
-        borderBottomWidth: 2,
-        textAlign: 'center'
+        margin: 20, 
+        padding: 15, 
+        textAlign: 'center', 
+        backgroundColor: '#CD0000', 
+        borderRadius: 20
     },
 });

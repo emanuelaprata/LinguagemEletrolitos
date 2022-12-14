@@ -42,17 +42,31 @@ export default function ListConteudo() {
         </TouchableOpacity>
       </View>
 
-      <View style={{ margin: 20, padding: 15, textAlign: 'center', backgroundColor: '#CD0000', borderRadius: 10,
+      <View style={{
+        margin: 20, padding: 15, textAlign: 'center', backgroundColor: '#D7DBDD', borderRadius: 10,
         shadowRadius: 2.5,
         shadowOpacity: 0.9,
-        elevation: 1}}>
-      <TouchableOpacity onPress={() => {
-                navigation.navigate('Calculadoras', Calculadoras)
-              }}>
+        elevation: 1
+      }}>
+        <TouchableOpacity onPress={() => {
+          navigation.navigate('Calculadoras', Calculadoras)
+        }}>
           <View style={{ flexDirection: 'row', justifyContent: "center", display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}>
-            <Text style={styles.headerText}>Calculadoras</Text>
+            <Text style={{
+              fontSize: 18,
+              marginLeft: 10,
+              fontWeight: '600',
+              marginTop: 0,
+              marginRight: 5
+            }}>Calculadoras</Text>
+            <View style={{ alignItems: 'center' }}>
+                <Image
+                    style={{ width: 25, height: 25 }}
+                    source={require('./calculo.png')} />
+            </View>
+
           </View>
-          
+
         </TouchableOpacity>
       </View>
 
@@ -92,7 +106,6 @@ const styles = StyleSheet.create({
     paddingVertical: 15,
     backgroundColor: '#870202',
     borderColor: '#CD0000',
-    //borderBottomWidth: 4,
 
   },
   headerText: {
@@ -112,11 +125,7 @@ const styles = StyleSheet.create({
     borderRadius: 7,
     margin: 12,
     elevation: 2,
-    //borderEndColor: '#black',
-    //borderLeftColor: '#CD0000',
-    //borderLeftWidth: 4,
     backgroundColor: '#D7DBDD',
-    //borderWidth: 0.4,
   },
   cardTitle: {
     fontSize: 18,

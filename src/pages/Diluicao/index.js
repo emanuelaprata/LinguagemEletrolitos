@@ -84,7 +84,7 @@ export default function CalculadoraDiluicao() {
                     />
                 </KeyboardAvoidingView>
 
-                <Text style={{ color: 'black', fontSize: 20 }}>Resultado é: {resultado}</Text>
+                <Text style={{ color: 'black', fontSize: 20 }}>Cada mL de diluição terá: {resultado}</Text>
             </View>
         </View>
     )
@@ -100,9 +100,7 @@ const styles = StyleSheet.create({
         justifyContent: "space-between",
         paddingTop: 50,
         paddingVertical: 15,
-        backgroundColor: '#CD0000',
-        borderColor: '#CD0000',
-        borderBottomWidth: 4,
+        backgroundColor: '#870202',
     },
     headerText: {
         color: 'white',
@@ -135,7 +133,7 @@ const styles = StyleSheet.create({
         fontSize: 20,
         padding: 10,
         borderRadius: 2,
-        borderColor: '#EECC2D',
+        borderColor: '#870202',
         borderBottomWidth: 2,
         textAlign: 'center'
     },

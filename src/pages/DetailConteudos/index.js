@@ -56,9 +56,7 @@ header: {
   justifyContent: "space-between",
   paddingTop: 50,
   paddingVertical: 15,
-  backgroundColor: '#CD0000',
-  borderColor: '#CD0000',
-  borderBottomWidth: 4,
+  backgroundColor: '#870202',
 },
 headerText: {
     color: 'white',
