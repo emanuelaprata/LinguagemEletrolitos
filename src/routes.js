@@ -1,14 +1,14 @@
 // In App.js in a new project
 
 import React from 'react';
-import { View, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Home from './pages/Home';
 import ListConteudo from './pages/ListConteudo'
 import DetailConteudo from './pages/DetailConteudos';
-import Calculadora from './pages/calculadoras';
+import Calculadoras from './pages/Calculadoras';
+import CalculadoraDiluicao from './pages/Diluicao';
 
 function Rotas() {
 
@@ -20,7 +20,8 @@ function Rotas() {
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="ListConteudo" component={ListConteudo} />
         <Stack.Screen name="DetailConteudo" component={DetailConteudo} />
-        <Stack.Screen name="Calculadora" component={Calculadora} />
+        <Stack.Screen name="Calculadoras" component={Calculadoras} />
+        <Stack.Screen name="CalculadoraDiluicao" component={CalculadoraDiluicao} />
       </Stack.Navigator>
     </NavigationContainer>
   );

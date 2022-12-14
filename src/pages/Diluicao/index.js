@@ -3,7 +3,7 @@ import { Icon } from "@rneui/themed";
 import { useNavigation } from '@react-navigation/native'
 import { useState } from 'react';
 
-export default function Calculadora() {
+export default function CalculadoraDiluicao() {
 
     const navigation = useNavigation();
 
@@ -11,9 +11,13 @@ export default function Calculadora() {
         navigation.goBack()
     }
 
-    const [numero, setNumero] = useState(0)
-    const x = parseFloat(numero);
-    const resultado = x / 100 * 10
+    const [diluente, setDiluente] = useState(0)
+    const [aliquota, setAliquota] = useState(0)
+    const [volumeTotal, setVolumeTotal] = useState(0)
+    const x = parseFloat(diluente);
+    const y = parseFloat(aliquota)
+    const z = parseFloat(volumeTotal)
+    const resultado = x*y/z
 
 
     return (
@@ -25,35 +29,62 @@ export default function Calculadora() {
                     onPress={goBack} >
                     <View style={{ flexDirection: 'row', justifyContent: "space-between" }}>
                         <Icon name='arrow-left' type='feather' color='white' style={{ marginLeft: 20 }} />
-                        <Text style={styles.headerText}>Calculadoras</Text>
+                        <Text style={styles.headerText}>Diluição de Medicamentos</Text>
                     </View>
                 </TouchableOpacity>
             </View>
 
 
             <View style={styles.container}>
-                <Text style={styles.Titulo}>O que é o dízimo?</Text>
 
-                <Text style={styles.Text}>A palavra dízimo significa “a décima parte”. O dízimo é uma doação, ou oferta, de um décimo de sua renda para o serviço de Deus. Desde a antiguidade, Deus ordenou a Seu povo que desse um décimo de tudo o que ganhasse de volta a Ele.</Text>
-
-                <Text style={styles.Titulo}>Calcule o seu dízimo:</Text>
-
+                <Text>Diluente</Text>
                 <KeyboardAvoidingView
                     behavior={Platform.OS === "ios" ? "padding" : "height"}
                 >
                     <TextInput
                         placeholder="Informe o valor do seu salário"
                         placeholderTextColor="white"
-                        color='white'
+                        color='black'
                         returnKeyType='done'
                         keyboardType="numeric"
-                        value={numero.toString().replace(',', '.')}
-                        onChangeText={setNumero}
+                        value={diluente.toString().replace(',', '.')}
+                        onChangeText={setDiluente}
                         style={styles.Input}
                     />
                 </KeyboardAvoidingView>
 
-                <Text style={{ color: '#C8C8C8', fontSize: 20 }}>O valor do seu dízimo é: R$ {resultado}</Text>
+                <Text>Solvente</Text>
+                <KeyboardAvoidingView
+                    behavior={Platform.OS === "ios" ? "padding" : "height"}
+                >
+                    <TextInput
+                        placeholder="Informe o valor do seu salário"
+                        placeholderTextColor="white"
+                        color='black'
+                        returnKeyType='done'
+                        keyboardType="numeric"
+                        value={aliquota.toString().replace(',', '.')}
+                        onChangeText={setAliquota}
+                        style={styles.Input}
+                    />
+                </KeyboardAvoidingView>
+
+                <Text>Volume total</Text>
+                <KeyboardAvoidingView
+                    behavior={Platform.OS === "ios" ? "padding" : "height"}
+                >
+                    <TextInput
+                        placeholder="Informe o valor do seu salário"
+                        placeholderTextColor="white"
+                        returnKeyType='done'
+                        keyboardType="numeric"
+                        value={volumeTotal.toString().replace(',', '.')}
+                        onChangeText={setVolumeTotal}
+                        style={styles.Input}
+                    />
+                </KeyboardAvoidingView>
+
+                <Text style={{ color: 'black', fontSize: 20 }}>Resultado é: {resultado}</Text>
             </View>
         </View>
     )
@@ -63,7 +94,6 @@ const styles = StyleSheet.create({
     screen: {
         flex: 1,
         display: "flex",
-        backgroundColor: 'black',
     },
     header: {
         flexDirection: 'row',
@@ -98,14 +128,13 @@ const styles = StyleSheet.create({
         flex: 1,
         display: "flex",
         alignItems: 'center',
-        backgroundColor: 'black',
+        justifyContent: 'center'
     },
     Input: {
         margin: 20,
         fontSize: 20,
         padding: 10,
         borderRadius: 2,
-        backgroundColor: '#151515',
         borderColor: '#EECC2D',
         borderBottomWidth: 2,
         textAlign: 'center'
