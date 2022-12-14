@@ -54,7 +54,7 @@ export default function ListConteudo() {
       >
         <View>
           <TouchableOpacity style={styles.card} onPress={(props) => {
-            navigation.navigate('Calculators')
+            navigation.navigate('Calculadoras')
           }}>
             <Icon
               name='divide-square'
