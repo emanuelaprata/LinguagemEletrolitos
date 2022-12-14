@@ -52,6 +52,27 @@ export default function ListConteudo() {
           paddingBottom: 25
         }}
       >
+        <View>
+          <TouchableOpacity style={styles.card} onPress={(props) => {
+            navigation.navigate('Calculators')
+          }}>
+            <Icon
+              name='divide-square'
+              type='feather'
+              color='#CD0000'
+              style={{ margin: 15 }}
+            />
+
+            <View style={{
+              flex: 1,
+              flexGrow: 1,
+              flexDirection: 'row',
+            }}>
+              <Text style={styles.cardTitle}>Calculadoras</Text>
+            </View>
+          </TouchableOpacity>
+        </View>
+
         {items.map((item, i) => {
           return (
             <View key={i} >

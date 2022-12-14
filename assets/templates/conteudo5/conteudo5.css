@@ -1,0 +1,161 @@
+@font-face {
+    font-family: "Lobster-Regular";
+    src: url("Metropolis-Regular.otf");
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    background-color: white;
+    font-size: 4vw;
+    width: 100%;
+    padding: 5%;
+}
+
+h1 {
+    font-family: Lobster-Regular;
+    font-size: 8vw;
+    text-align: center;
+}
+
+p {
+    margin-top: 6vw;
+    margin-bottom: 3vw;
+    font-size: 5vw;
+}
+
+p.topico {
+    margin-top: 6vw;
+    margin-bottom: 3vw;
+    font-size: 5vw;
+    padding: 4px;
+    width: 100%;
+    background-color: #C55A21;
+    border: 3px;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 1px 1px 2px black;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+}
+
+p.text {
+    margin-top: 2px;
+    font-size: 4vw
+}
+
+p.title {
+    font-weight: bold;
+    font-size: 5vw;
+}
+
+p.subtitle {
+    font-weight: bold;
+    font-size: 4.5vw;
+}
+
+p.sumario {
+    font-size: 3.5vw;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+p.textTopico {
+    margin: 0px;
+    padding: 20px;
+    font-size: 3.5vw;
+
+}
+
+div.topico1 {
+    width: 100%;
+    height: 150px;
+    background-color: #EA702A;
+    border: 3px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    color: white;
+    box-shadow: 1px 1px 2px black;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+    align-items: center;
+    display: flex;
+}
+
+div.topico2 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background-color: #9A9A9A;
+    border: 3px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    color: white;
+    box-shadow: 1px 1px 2px black;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+div.topico3 {
+    width: 100%;
+    height: 150px;
+    background-color: #F7C02F;
+    border: 3px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    color: white;
+    box-shadow: 1px 1px 2px black;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+div.topico4 {
+    width: 100%;
+    height: 150px;
+    background-color: #448BCB;
+    border: 3px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    color: white;
+    box-shadow: 1px 1px 2px black;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+div.topico5 {
+    width: 100%;
+    height: 150px;
+    background-color: #64A638;
+    border: 3px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    color: white;
+    box-shadow: 1px 1px 2px black;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+    align-items: center;
+    display: flex;
+}
+
+div.divFlex {
+    display: flex;
+    align-items: center;
+}

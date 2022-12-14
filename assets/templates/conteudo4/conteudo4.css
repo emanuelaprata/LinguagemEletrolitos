@@ -1,0 +1,120 @@
+@font-face {
+    font-family: "Lobster-Regular";
+    src: url("Metropolis-Regular.otf");
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    background-color: white;
+    font-size: 4vw;
+    width: 100%;
+    padding: 5%;
+}
+
+h1 {
+    font-family: Lobster-Regular;
+    font-size: 8vw;
+    text-align: center;
+}
+
+p {
+    margin-top: 2px; 
+    font-size: 4vw
+}
+p.title{
+    margin-top: 6vw;
+    margin-bottom: 3vw;
+    font-size: 5vw;
+}
+p.sumario {
+    font-size: 3.5vw;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+p.subTitle {
+    font-size: 3.5vw;
+    text-align: center;
+}
+p.textTopico{
+    margin: 0px; 
+    padding: 20px; 
+    font-size:3vw;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+
+}
+div.topico1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #EA702A;
+    border: 3px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    box-shadow: 1px 1px 2px black;
+    margin: 10px;
+}
+
+div.topico2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #9A9A9A;
+    border: 3px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    box-shadow: 1px 1px 2px black;
+    margin: 10px;
+}
+
+div.topico3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #F7C02F;
+    border: 3px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    box-shadow: 1px 1px 2px black;
+    margin: 10px;
+}
+
+div.topico4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #448BCB;
+    border: 3px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    box-shadow: 1px 1px 2px black;
+    margin: 10px;
+}
+
+div.topico5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #64A638;
+    border: 3px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    box-shadow: 1px 1px 2px black;
+    margin: 10px;
+}
+
+img.icons {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    margin-bottom: 20px
+}

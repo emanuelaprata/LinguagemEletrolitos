@@ -1,0 +1,46 @@
+@font-face {
+    font-family: "Lobster-Regular";
+    src: url("Metropolis-Regular.otf");
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    background-color: white;
+    font-size: 4vw;
+    width: 100%;
+    padding: 5%;
+}
+
+h1 {
+    font-family: Lobster-Regular;
+    font-size: 8vw;
+}
+
+p {
+    margin-top: 6vw;
+    margin-bottom: 1.5vw;
+    font-size: 4.5vw;
+}
+
+p.topico {
+    margin-top: 6vw;
+    margin-bottom: 3vw;
+    font-size: 3.5vw;
+    padding: 4px;
+    width: 100%;
+    background-color: #C00000;
+    border: 3px;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 1px 1px 2px black;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+}
+
+li {
+    margin-top: 1.5vw;
+}
