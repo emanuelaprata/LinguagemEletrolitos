@@ -22,7 +22,7 @@
     "@rneui/base": "github:react-native-elements/react-native-elements#base",
     "@rneui/themed": "github:react-native-elements/react-native-elements#themed",
     "babel-plugin-macros": "^3.1.0",
-    "expo": "~46.0.16",
+    "expo": "~46.0.19",
     "expo-app-loading": "^2.1.0",
     "expo-font": "~10.2.0",
     "expo-splash-screen": "~0.16.2",
