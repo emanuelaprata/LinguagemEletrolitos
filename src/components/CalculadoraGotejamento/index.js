@@ -73,6 +73,7 @@ export default function CalculadoraGotejamento() {
                         title="Horas"
                         checked={emHoras}
                         containerStyle={{ backgroundColor: "#fff" }}
+                        onPress={() => { setemHoras(true) }}
                     />
                 </TouchableOpacity>
 
@@ -81,6 +82,7 @@ export default function CalculadoraGotejamento() {
                         title="Minutos"
                         checked={!emHoras}
                         containerStyle={{ backgroundColor: "#fff" }}
+                        onPress={() => { setemHoras(false) }}
                     />
                 </TouchableOpacity>
             </View>
