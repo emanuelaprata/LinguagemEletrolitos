@@ -14,16 +14,16 @@ export default function ListConteudo() {
   const [items, setItems] = React.useState(
     [
       { title: 'Valores plasmáticos normais dos principais eletrólitos em adultos', templateWeb: 'conteudo1' },
-      { title: 'Diagnósticos de enfermagem', templateWeb: 'conteudo2', subtitulo: 'Aqui é o subtitulo' },
-      { title: 'Intervenções de enfermagem', templateWeb: 'conteudo3', subtitulo: 'Aqui é o subtitulo' },
-      { title: 'Sódio – Cloreto de sódio', templateWeb: 'conteudo4', subtitulo: 'Aqui é o subtitulo' },
-      { title: 'Potássio – Cloreto de potássio', templateWeb: 'conteudo5', subtitulo: 'Aqui é o subtitulo' },
-      { title: 'Cloreto – cloreto de sódio e cloreto de potássio', templateWeb: 'conteudo6', subtitulo: 'Aqui é o subtitulo' },
-      { title: 'Cálcio – Gluconato de cálcio a 10% e cloreto de cálcio a 10%', templateWeb: 'conteudo7', subtitulo: 'Aqui é o subtitulo' },
-      { title: 'Magnésio – Sulfato de magnésio', templateWeb: 'conteudo8', subtitulo: 'Aqui é o subtitulo' },
-      { title: 'Fosfato – Fosfato de potássio', templateWeb: 'conteudo9', subtitulo: 'Aqui é o subtitulo' },
-      { title: 'Dupla checagem da medicação seguindo os treze certos:', templateWeb: 'conteudo10', subtitulo: 'Aqui é o subtitulo' },
-      { title: 'Referências', templateWeb: 'conteudo11', subtitulo: 'Aqui é o subtitulo' },
+      { title: 'Diagnósticos de enfermagem', templateWeb: 'conteudo2' },
+      { title: 'Intervenções de enfermagem', templateWeb: 'conteudo3' },
+      { title: 'Sódio – Cloreto de sódio', templateWeb: 'conteudo4' },
+      { title: 'Potássio – Cloreto de potássio', templateWeb: 'conteudo5' },
+      { title: 'Cloreto – cloreto de sódio e cloreto de potássio', templateWeb: 'conteudo6' },
+      { title: 'Cálcio – Gluconato de cálcio a 10% e cloreto de cálcio a 10%', templateWeb: 'conteudo7' },
+      { title: 'Magnésio – Sulfato de magnésio', templateWeb: 'conteudo8' },
+      { title: 'Fosfato – Fosfato de potássio', templateWeb: 'conteudo9' },
+      { title: 'Dupla checagem da medicação seguindo os treze certos:', templateWeb: 'conteudo10' },
+      { title: 'Fontes', templateWeb: 'conteudo11' },
     ]
   )
 

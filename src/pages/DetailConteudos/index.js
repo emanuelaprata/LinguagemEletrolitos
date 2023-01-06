@@ -16,7 +16,7 @@ export default function DetailConteudo(route) {
   let source
   if (Platform.OS === 'ios') {
     let urlPath = item.templateWeb + '.html'
-    source = { uri: urlPath , baseUrl:'/'}
+    source = { uri: urlPath, baseUrl: '/' }
   } else {
     let urlPath = 'file:///android_asset/custom/' + item.templateWeb + '.html'
     source = { uri: urlPath }
